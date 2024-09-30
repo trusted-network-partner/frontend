@@ -1,0 +1,106 @@
+.info {
+  margin-bottom: 52px;
+  &__nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &__nav-item {
+      min-width: 168px;
+      &:first-child {
+        .btn-default {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+      }
+      &:last-child {
+        .btn-default {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+      }
+      .btn-default {
+        text-transform: uppercase;
+      }
+  }
+}
+
+.info-default {
+  height: 72px;
+  border: 1px solid $thirdlyGray;
+  border-radius: 8px;
+  //overflow: hidden;
+  padding: 11px 19px;
+  &.password {
+    padding: 11px 51px 11px 19px;
+  }
+  &__label {
+    font-size: 12px;
+    color: #7D869D;
+    margin-bottom: 3px;
+  }
+  &__value {
+    background: transparent;
+    border: 1px solid transparent;
+    outline: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    color: #15171C;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+}
+
+.info-default__item.flex {
+  display: flex;
+  align-items: center;
+}
+
+.info-default.select-inside {
+  padding: 15px 0 17px 19px;
+  .select-wrap {
+    //padding-left: 24px;
+    min-width: 100px;
+  }
+  .info-default__element {
+    border-right: 1px solid $thirdlyGray;
+    flex: 1 1;
+    input {
+      padding-right: 20px;
+    }
+  }
+  .select-value-item {
+    color: $baseBlack;
+  }
+  .select-trigger-icon path {
+    fill: $baseBlack;
+  }
+  .select-trigger {
+    justify-content: center;
+  }
+}
+
+.info-default__col {
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+.content-form__item-label.flex {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  .auth-free__category-title {
+    margin-left: 10px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: all .3s ease;
+  }
+  &:hover {
+    .auth-free__category-title {
+      color: $baseOrange;
+    }
+  }
+}

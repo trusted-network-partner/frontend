@@ -1,0 +1,234 @@
+.hire-professional {
+  &__icon {
+    cursor: pointer;
+    margin-left: 22px;
+    svg {
+      &:hover {
+        path {
+          transition: all .3s ease;
+          fill: $baseOrange;
+        }
+      }
+    }
+  }
+
+  &-preference__object {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-wrap {
+    .content-form__item-wrap {
+      background: $baseWhite;
+      position: relative;
+    }
+
+    .estate-general__container {
+      max-width: 100%;
+    }
+
+    .estate-general__descr {
+      max-width: 375px;
+    }
+
+    .estate-general__title {
+      line-height: 2rem;
+    }
+
+    .info-default__value:focus {
+      box-shadow: none;
+    }
+
+    .mb_30 {
+      margin-bottom: 30px;
+    }
+
+    .estate-general__descr .bold {
+      font-weight: bold;
+    }
+
+    .info-default {
+      background: $baseWhite;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    max-width: 800px;
+    //padding-top: 120px;
+    padding-top: 50px;
+    margin-left: 60px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
+    &__items {
+      margin-bottom: 20px;
+      display: flex;
+      width: 100%;
+
+      .info-default {
+        width: 375px;
+
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+      }
+
+    }
+
+    .btn-default {
+      text-transform: uppercase;
+    }
+  }
+
+  //budget
+  &-budget__title {
+    margin-bottom: 40px;
+  }
+
+  &-budget__items {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &-budget__item {
+    //width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-form__elem {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+
+  //&-budget__item-top{
+  //  width: 120px;
+  //  height: 120px;
+  //  background-color: $thirdlyGray;
+  //  border-radius: 5px;
+  //  margin-bottom: 15px;
+  //}
+
+  &-budget__buttons {
+    display: flex;
+
+  }
+
+  &-budget__button {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  //preference
+  &-reference__items{
+    flex-wrap: wrap;
+  }
+  &-preference__item{
+    .content-form__item-wrap{
+      width: 245px;
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+    }
+
+
+  }
+  &-preference__title{
+    margin-bottom: 20px;
+  }
+  &-preference__list{
+    padding: 13px ;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    //justify-content: center;
+    height: 70px;
+    width: 100%;
+
+  }
+  &-preference__object{
+    background-color: $sixtyGray;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    span{
+      font-size: 14px;
+      font-weight: 700;
+    }
+    &:not(:last-child){
+      margin-right: 12px;
+    }
+  }
+  &-preference__item-link{
+    color: $baseOrange;
+    font-size: 16px;
+    font-weight: 600;
+    span {
+      margin-right: 5px;
+    }
+  }
+  //filters
+  &__filters.filter__popup{
+    padding: 0;
+  }
+  &__filters{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__filters-item{
+    width: 205px;
+    margin-bottom: 25px;
+  }
+
+  //rental
+  &-rental__item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .hire-professional-preference__title{
+      width: 100%;
+    }
+
+  }
+  &-rental__info-default{
+    background-color: #fff;
+    margin-bottom: 20px;
+    input{
+
+    }
+  }
+  &-rental__items{
+    display: flex;
+    .estate-info__item{
+      &:not(:last-child){
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.hire-professional-reference__items  {
+  justify-content: space-between;
+}
+
+.hire-professional-preference__item-link {
+  font-size: 14px;
+  margin-left: 8px;
+}

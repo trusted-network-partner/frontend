@@ -1,0 +1,373 @@
+.agent-info {
+  max-width: 950px;
+}
+
+.info-content {
+  &__section {
+    padding-bottom: 35px;
+    border-bottom: 1px solid $thirdlyGray;
+    margin-bottom: 31px;
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    position: relative;
+    margin-bottom: 24px;
+    &:after {
+      content: '';
+      width: 36px;
+      height: 4px;
+      background: $baseOrange;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__descr p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    margin-bottom: 8px;
+  }
+ &__more-btn {
+   transition: all .3s ease;
+   font-size: 14px;
+   position: relative;
+   &:after {
+     content: "";
+     width: 100%;
+     height: 1px;
+     background: $baseBlack;
+     position: absolute;
+     left: 0;
+     bottom: 4px;
+     transition: all 0.3s ease;
+   }
+   &:hover:after {
+    width: 0;
+   }
+  }
+  &__section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    .info-content__title {
+      margin-bottom: 0;
+    }
+    .btn-default {
+      text-transform: uppercase;
+      span {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+.info-content__items {
+  display: flex;
+  margin: 0 -13px;
+}
+
+.info-content__item {
+  padding:  0 13px;
+  flex: 1 1 33.33%;
+  &-inner {
+    background: $lightWhite;
+    border-radius: $border-5;
+    min-height: 118px;
+    padding: 26px 20px 20px;
+  }
+}
+
+.info-content__item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.info-content__item-elems {
+  display: flex;
+  align-items: center;
+}
+
+.info-content__item-elem {
+  border: 1px solid $baseWhite;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: -14px;
+  &:first-child {
+    margin-left: 0;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.info-content__item-btn {
+  background: $defaultBlack;
+  color: $baseWhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+  &:hover {
+    background: $baseOrange;
+  }
+  span {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 2px;
+  }
+}
+
+.info-experience__section {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $thirdlyGray;
+  margin-bottom: 38px;
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.info-experience__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.info-experience__img {
+  width: 60px;
+  height: 60px;
+  border-radius: $border-5;
+  overflow: hidden;
+  margin-right: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+.info-experience__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info-experience__details, .info-experience__item {
+  display: flex;
+  align-items: center;
+}
+
+.info-experience__item {
+  margin-right: 30px;
+  svg {
+    max-width: 14px;
+    max-height: 14px;
+    margin-right: 12px;
+    & path {
+      fill: $baseGray;
+    }
+  }
+}
+
+.info-experience__item-label {
+  font-size: 14px;
+  color: $baseGray;
+}
+
+.content-wrap__info .agent-info__nav {
+  margin-bottom: 66px;
+}
+
+
+.item-custom {
+  padding-bottom: 52px;
+  margin-bottom: 46px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+
+.mb {
+  margin-bottom: 29px;
+}
+
+
+
+.members__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.members__item {
+  //flex: 1 1 33.33%;
+  padding: 0 15px;
+  margin-bottom: 27px;
+}
+
+.members__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 20px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.members__item-title {
+  transition: all .3s ease;
+  font-weight: 600;
+  display: inline-flex;
+  margin-bottom: 4px;
+  &:hover {
+    color: $baseOrange;
+  }
+}
+
+.members__item-inner {
+  display: flex;
+  align-items: center;
+  max-width: 245px;
+}
+
+.members__item-descr {
+  font-size: 14px;
+  color: $baseGray;
+}
+
+.info-content__section.flex-items {
+  padding-bottom: 4px;
+}
+
+.about-company .agent-info__nav {
+  margin-bottom: 67px;
+}
+
+.about-company > .info-content__section {
+  margin-bottom: 33px;
+}
+
+.members__item-details {
+  flex: 1 1 ;
+}
+
+.marketing-tools {
+  &__items {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+  }
+  &__item {
+    flex: 1 1 25%;
+    padding: 0 15px;
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 118px;
+      border-radius: $border-5;
+      background: $lightWhite;
+      overflow: hidden;
+    }
+  }
+}
+
+.company {
+  margin-bottom: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.company__img {
+  margin-right: 15px;
+  margin-left: -4px;
+}
+
+.company__name {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+  transition: all .3s ease;
+  &:hover {
+    color: $baseOrange;
+  }
+}
+
+.company__details {
+  display: flex;
+  align-items: center;
+}
+
+.company__address-wrap, .company__date-wrap {
+  display: flex;
+  align-items: center;
+  svg {
+    max-width: 14px;
+    max-height: 14px;
+  }
+}
+
+.company__address-wrap {
+  margin-right: 30px;
+}
+
+.company__info {
+  padding-top: 5px;
+}
+
+.company__date, .company__address {
+  font-size: 14px;
+  margin-left: 10px;
+  color: $baseGray;
+}
+
+.digital-marketing .agent-info__nav {
+  margin-bottom: 62px;
+}
+
+.digital-marketing .posts__item {
+  margin-bottom: 53px;
+}
+
+.digital-marketing  {
+  .item-custom {
+    padding-bottom: 73px;
+  }
+}

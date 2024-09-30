@@ -1,0 +1,301 @@
+.post {
+  &__likes-info {
+    display: flex;
+    align-items: center;
+  }
+  &__likes-users {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: $baseGray;
+  }
+  &__header {
+    margin-bottom: 27px;
+  }
+  &__likes-user {
+    transition: all .3s ease;
+    &:hover {
+      color: $baseOrange;
+    }
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-right: 5px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 180%;
+  }
+  &__more-btn {
+    font-size: 16px;
+    margin-left: 16px;
+    position: relative;
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: $baseBlack;
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+      transition: all .3s ease;
+    }
+    &:hover:after {
+      width: 0;
+    }
+  }
+  &__body {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $thirdlyGray;
+    margin-bottom: 23px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__stats {
+    display: flex;
+    align-items: center;
+  }
+  &__likes, &__comments {
+    margin-right: 37px;
+    input {
+      display: none;
+    }
+    svg {
+      margin-right: 7px;
+      & path {
+        fill: $baseGray;
+      }
+    }
+    &-count {
+      font-weight: 600;
+      font-size: 14px;
+      color: $baseGray;
+    }
+  }
+  &__likes-label {
+    cursor: pointer;
+  }
+  &__share {
+    &-text {
+      font-weight: 600;
+      font-size: 14px;
+      margin-left: 6px;
+      transition: all .3s ease;
+      text-transform: uppercase;
+    }
+    &:hover &-text {
+      color: $baseOrange;
+    }
+  }
+  &__img {
+    margin-top: 23px;
+  }
+}
+
+.post__comments-link, .post__likes-label, .post__share__btn {
+  svg path {
+    transition: all .3s ease;
+  }
+  &:hover {
+    svg path {
+      fill: $baseOrange;
+    }
+  }
+}
+
+.post__likes-input:checked + svg path {
+  fill: $baseOrange;
+}
+
+.post__likes-label.liked {
+  svg path {
+    fill: $baseOrange;
+  }
+}
+
+.post__author-btn {
+  svg path {
+    transition: all .3s ease;
+  }
+  &:hover {
+    svg path {
+      stroke: $baseOrange;
+    }
+  }
+}
+
+.post__info {
+  display: flex;
+  align-items: center;
+  &-text {
+    font-weight: bold;
+    font-size: 14px;
+    color: $baseGray;
+    margin-left: 12px;
+    .user-link {
+      transition: all .3s ease;
+      &:hover {
+        color: $baseOrange;
+      }
+    }
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  &__img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .3s ease;
+    margin-bottom: 6px;
+    display: inline-block;
+    &:hover {
+      color: $baseOrange;
+    }
+  }
+  &__descr {
+    font-size: 14px;
+    color: $baseGray;
+  }
+}
+
+.posts__item {
+  margin-bottom: 71px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post__rate-info {
+  display: flex;
+  align-items: center;
+}
+
+.post__rate-text {
+  margin-left: 9px;
+  font-weight: bold;
+  font-size: 14px;
+  color: $baseGray;
+  .black {
+    color: $baseBlack;
+  }
+}
+.post__files.files {
+  margin-top: 41px;
+  .post__files-item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.post__file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: $border-5;
+  overflow: hidden;
+  &-info {
+    background: $lightWhite;
+    width: calc(100% - 76px);
+    display: flex;
+    height: 76px;
+    align-items: center;
+    padding: 15px;
+  }
+  &-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: $border-5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $fifthlyGray;
+    margin-right: 19px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  &-spec {
+    font-size: 14px;
+    color: $baseGray;
+  }
+  &-download {
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $baseBlack;
+    svg path {
+      transition: all .3s ease;
+    }
+    &:hover svg path {
+      fill: $baseOrange;
+    }
+  }
+}
+
+.posts__list {
+  max-width: 951px;
+  margin: 0 auto;
+}
+
+.post__buttons {
+  display: flex;
+  align-items: center;
+  button {
+    min-width: 175px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    &:last-child {
+      margin-right: 0;
+    }
+    span {
+      margin-left: 4px;
+      display: inline-block;
+    }
+  }
+}
+
+.post__comments-link {
+  &.active {
+    svg path {
+      fill: $baseOrange;
+    }
+    .post__comments-count {
+      color:  $baseOrange;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "id" : "1",
+    "img" : "user1.jpg",
+    "name" : "Theresa Steward",
+    "descr" : "Real estate agent",
+    "isPartner" : true
+  },
+  {
+    "id" : "2",
+    "img" : "user2.jpg",
+    "name" : "Idealista",
+    "descr" : "Real estate listing",
+    "isPartner" : true
+  },
+  {
+    "id" : "3",
+    "img" : "user3.jpg",
+    "name" : "Drumelia Real Estate",
+    "descr" : "Developer company",
+    "isPartner" : true
+  },
+  {
+    "id" : "4",
+    "img" : "user4.jpg",
+    "name" : "Engel & Völkers España",
+    "descr" : "Real estate manager",
+    "isPartner" : true
+  },
+  {
+    "id" : "5",
+    "img" : "user5.jpg",
+    "name" : "Felice Tufano",
+    "descr" : "Real estate manager",
+    "isPartner" : true
+  },
+  {
+    "id" : "6",
+    "img" : "member1.jpg",
+    "name" : "Theresa Steward",
+    "descr" : "Real estate company",
+    "isPartner" : true
+  },
+  {
+    "id" : "7",
+    "img" : "review1.jpg",
+    "name" : "Theresa Steward",
+    "descr" : "Buyer",
+    "isPartner" : true
+  },
+  {
+    "id" : "8",
+    "img" : "user6.jpg",
+    "name" : "Yana Baskal",
+    "descr" : "Seller",
+    "isPartner" : true
+  },
+  {
+    "id" : "9",
+    "img" : "user7.jpg",
+    "name" : "Andriy Koshelevich",
+    "descr" : "Real estate agent",
+    "isPartner" : true
+  },
+  {
+    "id" : "10",
+    "img" : "user1.jpg",
+    "name" : "Audrey Alexander",
+    "descr" : "Real estate agent",
+    "isPartner" : true
+  },
+  {
+    "id" : "11",
+    "img" : "user8.jpg",
+    "name" : "Yaencontre",
+    "descr" : "Real estate listings",
+    "isPartner" : true
+  }
+]

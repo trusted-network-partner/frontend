@@ -1,0 +1,47 @@
+.search-form {
+  padding: 34px 30px 40px;
+  border-radius: $border-5;
+  overflow: hidden;
+  background: $lightWhite;
+  .users__title {
+    padding-top: 0;
+  }
+  &__item {
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: $border-5;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    input {
+      height: 54px;
+      padding: 28px 20px 28px 41px;
+      border: 0;
+      outline: 0;
+      background: $baseWhite;
+      width: 100%;
+      border-radius: $border-5;
+    }
+    svg {
+      max-width: 15px;
+      max-height: 15px;
+    }
+  }
+}
+.search-form__img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+}
+
+.search-form-btn {
+  margin-top: 20px;
+  button {
+    max-width: 100%;
+  }
+}

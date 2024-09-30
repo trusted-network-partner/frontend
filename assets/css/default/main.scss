@@ -1,0 +1,503 @@
+@import "./utils/fonts";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: $baseWhite;
+  color: $baseBlack;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+}
+
+input,
+select,
+button,
+textarea {
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  //height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: relative;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+input, textarea, button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+input, textarea {
+  &::-webkit-input-placeholder {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: $baseGray;
+  }
+  &::-moz-placeholder {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: $baseGray;
+  }
+  &-ms-input-placeholder {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: $baseGray;
+  }
+  transition: all .3s ease;
+  &:focus:not(.search__input) {
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,.08);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.08);
+  }
+}
+
+.content-wrap {
+  margin-bottom: 160px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  .sidebar {
+    width: 25.5%;
+    padding-right: 30px;
+    position: relative;
+    z-index: 10;
+  }
+  &-auth {
+    border-top: 1px solid $thirdlyGray;
+  }
+}
+
+.logo {
+  font-weight: bold;
+  color: $secondaryBlack;
+}
+
+.content-wrap {
+  width: 74.5%;
+}
+
+.container {
+  width: 1470px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.menu_wrap {
+  position: fixed;
+  flex-direction: column;
+  z-index: 1000;
+  display: flex;
+  width: 200px;
+  transition: all .3s ease;
+  -webkit-transform: translateX(-202px);
+  transform: translateX(-202px);
+  background: #ffffff;
+  border-radius: 6px;
+  top: 10px;
+  box-shadow: 0 0 3px 3px rgba(54, 128, 251, 0.16);
+}
+.menuGlobal {
+  width: 100%;
+  padding: 20px;
+  height: 79vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.menu_click {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  border-left: 2px solid transparent;
+  width: 33px;
+  height: 30px;
+  button {
+    padding: 0;
+  }
+}
+.menuGlobal__item {
+  margin-bottom: 17px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.menuGlobal__link {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+  transition: .3s;
+  &:hover {
+    color: #3680FB;
+  }
+}
+.menu_click, .menu_click button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_wrap-title {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3680FB;
+  border-bottom: 1px dashed #EAF0FA;
+}
+.menu_click button {
+  font-weight: 700;
+  line-height: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #000;
+  border: 1px solid #BBCDEE;
+  outline: unset;
+  background: #F8FAFE;
+  border-radius: 6px;
+  .icon-drop {
+    width: 12px;
+    height: 7px;
+    fill: #BBCDEE;
+  }
+}
+.menu_wrap_active {
+  transition: all .3s ease;
+  -webkit-transform: translateX(2%);
+  transform: translateX(2%);
+}
+
+.container.relative {
+  position: relative;
+}
+
+.content-wrap-full-width {
+  width: 100%;
+}
+
+.default-title {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: $baseOrange;
+  }
+}
+
+.btn-default.btn-filter {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.section-back {
+  display: flex;
+  align-items: center;
+  &__text {
+    text-transform: uppercase;
+    margin-left: 19px;
+    transition: all .3s ease;
+  }
+  svg path {
+    transition: all .3s ease;
+  }
+  &:hover {
+    color: $baseOrange;
+    svg path {
+      stroke: $baseOrange;
+      fill: $baseOrange;
+    }
+  }
+}
+
+.main-auth .info-default__value:focus, .wrapper .info-default__value.no-focus:focus {
+  box-shadow: 0 0 0px 0px rgb(0, 0, 0, 0);
+}
+
+
+.rating {
+  &-stars {
+    background: url("~/assets/img/icons/star-blank.svg") repeat-x;
+    width: 90px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    &__background {
+      background: url("~/assets/img/icons/star-filled.svg") repeat-x;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      z-index: 2;
+    }
+  }
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pagination-list-wrap {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-item {
+  transition: all .3s ease;
+  background: $baseWhite;
+  width: 42px;
+  height: 42px;
+  border-radius: $border-5;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  span {
+    font-size: 18px;
+    transition: all .3s ease;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover, &.active {
+    background: $baseBlack;
+    span {
+      font-weight: bold;
+      color: $baseWhite;
+    }
+  }
+}
+
+.info-content__dropdown-icon.active {
+  path {
+    opacity: 1;
+  }
+  .good path {
+    fill: $baseGreen;
+  }
+  .normal path {
+    fill: $baseOrange;
+  }
+  .bad path {
+    fill: $baseRed;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  &__info {
+    width: 59%;
+  }
+}
+.main-auth{
+  position: relative;
+  min-height: calc(100vh - 60px);
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $lightWhite;
+    height: 100%;
+    z-index: -1;
+    width: 42.8%;
+  }
+}
+
+.hire-professional-content {
+  .info-default__items {
+    background: $baseWhite;
+  }
+  .auth-free__category-title {
+    text-transform: capitalize;
+  }
+}
+
+.swiper-button-prev,  .swiper-button-next  {
+  transition: all .3s ease;
+  border: 1px solid transparent;
+  path {
+    fill: $baseBlack;
+  }
+  &:hover {
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $secondaryWhite;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $darkFrey;
+}
+
+@import "./select";
+@import "./measurment";
+@import "./search";
+@import "./animations";
+@import "./btns";
+@import "./search-form";
+@import "./pop-up-date";
+@import "../info/info";
+@import "../info/communities-events";
+
+
+
+@import "../info/create-group-event";
+
+@import "../profile/agent-profile";
+
+//ref
+@import "../property/property";
+@import "../agent/agent-info-content";
+
+
+@import "../agent/info";
+
+//ref
+@import "../settings/settings";
+
+@import "../real-estate/real-estate";
+@import "../real-estate/real-estate-info";
+
+//@import "../sidebar/items";
+//@import "../info/catalogue";
+//@import "../info/community";
+//@import "../info/events";
+//@import "../partners/partners";
+//@import "../agent/listing-services";
+//@import "../auth/auth-general";
+//@import "../posts/posts-list";

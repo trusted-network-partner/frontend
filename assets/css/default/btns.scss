@@ -1,0 +1,71 @@
+.btn {
+  &-default {
+    min-height: 48px;
+    padding: 5px;
+    width: 100%;
+    max-width: 185px;
+    border-radius: $border-5;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    background: $sixtyGray;
+    color: $secondaryGray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+      border-color: $seventhGray;
+    }
+    &:active {
+      background: $seventhGray;
+    }
+    &.black {
+      background: $baseBlack;
+      color: $baseWhite;
+      &:active {
+        color: $fourthlyGray;
+        border-color: $secondaryBlack;
+      }
+      &:hover {
+        background: $thirdlyBlack;
+        border-color: $secondaryBlack;
+      }
+    }
+    &.blank {
+      background: transparent;
+      color: $baseBlack;
+      border-color: $baseBlack;
+      &:hover {
+        background: $thirdlyBlack;
+        border-color: $baseBlack;
+        color: $baseWhite;
+      }
+      &:active {
+        background:  $baseBlack;
+        border-color: $baseBlack;
+        color: $fourthlyGray;
+      }
+    }
+  }
+  &-arrow {
+    span {
+      font-weight: 600;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+    svg {
+      transition: all .3s ease;
+      path {
+        fill: $baseBlack;
+      }
+    }
+    &:hover {
+      svg {
+        transform: translateX(8px);
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id" : "1",
+    "img" : "user1.jpg",
+    "name" : "Theresa Steward",
+    "descr" : "iOS developer"
+  },
+  {
+    "id" : "2",
+    "img" : "user1.jpg",
+    "name" : "Theresa Steward",
+    "descr" : "iOS developer"
+  },
+  {
+    "id" : "3",
+    "img" : "user1.jpg",
+    "name" : "Theresa Steward",
+    "descr" : "iOS developer"
+  }
+]

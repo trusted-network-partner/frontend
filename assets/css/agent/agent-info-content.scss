@@ -1,0 +1,61 @@
+.agent-info-content {
+  padding-top: 34px;
+}
+
+.agent-info {
+  &__nav-list {
+    display: flex;
+    align-items: center;
+  }
+  &__nav-item {
+    margin-right: 70px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.agent-info__nav {
+  margin-bottom: 55px;
+}
+
+.agent-info__nav-link {
+  text-transform: uppercase;
+  transition: all .3s ease;
+  position: relative;
+  padding-bottom: 10px;
+  &.nuxt-link-active, &.active {
+    font-weight: bold;
+    &:after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      background: $baseOrange;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &:hover:not(.nuxt-link-active) {
+    color: $baseOrange;
+  }
+}
+
+.agent-info__nav .back {
+  svg {
+    margin-top: -4px;
+    & path {
+      transition: all .3s ease;
+    }
+  }
+  .agent-info__nav-link {
+    display: inline-block;
+    margin: 0 0 0 20px;
+  }
+}
+
+.agent-info__nav .back:hover {
+  svg path {
+    stroke: $baseOrange;
+  }
+}

@@ -1,0 +1,38 @@
+.measurement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    &__check {
+      cursor: pointer;
+      width: 33px;
+      height: 17px;
+      background: $baseOrange;
+      padding: 2px;
+      display: inline-flex;
+      border-radius: 40px;
+      position: relative;
+      &-span {
+        position: absolute;
+        left: 4px;
+        top: 3.4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $baseWhite;
+        transition: all .3s ease;
+      }
+      &-input {
+          display: none;
+      }
+    }
+}
+.measurement__check-input:checked + .measurement__check-span {
+    left: auto;
+    right: 4px;
+}
+

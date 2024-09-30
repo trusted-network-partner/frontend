@@ -1,0 +1,91 @@
+.search {
+  transition: all .3s ease;
+  width: auto;
+  &.expanded {
+    width: 647px;
+    .search__btn {
+      margin-right: 20px;
+    }
+    .search__form {
+      display: flex;
+      align-items: center;
+      border-radius: $border-5;
+      background: $lightWhite;
+      padding: 10px 16px 10px 20px;
+      &-select {
+        display: block;
+      }
+      &-input {
+        display: block;
+      }
+    }
+    .search__input {
+      display: block;
+    }
+  }
+  &__form-select {
+    display: none;
+  }
+  &__input {
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    max-width: 455px;
+    border: 0;
+    background: transparent;
+    display: none;
+  }
+  &__btn {
+    svg {
+      & path {
+        transition: all .3s ease;
+      }
+      &:hover path {
+        fill: $baseOrange;
+      }
+    }
+    &.active-input {
+      svg path {
+        fill: $baseBlack;
+      }
+    }
+  }
+  .select-value-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $baseGray;
+    margin-right: 15px;
+  }
+  .select {
+    &-container {
+      margin-right: 15px;
+    }
+  }
+  &__form-input {
+    width: 100%;
+    position: relative;
+    border-left: 1px solid $thirdlyGray;
+    padding: 2px 22px 2px 15px;
+    display: none;
+  }
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    svg {
+      transition: all .3s ease;
+      &:hover rect {
+        fill: $baseOrange;
+      }
+    }
+    svg rect {
+      transition: all .3s ease;
+    }
+  }
+}
+.search .select-container {
+  margin-right: 23px;
+}

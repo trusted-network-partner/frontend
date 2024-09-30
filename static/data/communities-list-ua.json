@@ -1,0 +1,20 @@
+[
+  {
+    "id" : "0",
+    "img" : "community1.jpg",
+    "name" : "Iberdrola",
+    "description" : "Кілька слів опису ..."
+  },
+  {
+    "id" : "1",
+    "img" : "community2.jpg",
+    "name" : "Sareb",
+    "description" : "Кілька слів опису ..."
+  },
+  {
+    "id" : "3",
+    "img" : "community3.jpg",
+    "name" : "Haya Real Estate",
+    "description" : "Кілька слів опису ..."
+  }
+]

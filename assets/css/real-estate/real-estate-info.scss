@@ -1,0 +1,447 @@
+.add-real-estate {
+  border-top: 1px solid $thirdlyGray;
+  position: relative;
+  min-height: calc(100vh - 92px);
+  overflow: hidden;
+  background: $lightWhite;
+  min-width: max-content;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $baseBlack;
+    height: 100%;
+    z-index: 0;
+    width: 42.8%;
+  }
+}
+
+.estate {
+  &-info-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 42.8%;
+    background-color: $sixBlack;
+    min-height: 285px;
+  }
+  &-info-wrap {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 92px);
+  }
+  &-general {
+    width: 40.5%;
+    &__wrap {
+      padding: 10px 0;
+      background-color: $sixBlack;
+      min-height: 285px;
+      color: $baseWhite;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 22px;
+    }
+    &__descr {
+      line-height: 200%;
+      max-width: 477px;
+      .bold {
+        font-weight: bold;
+      }
+    }
+    &__links {
+      &-item {
+        padding-bottom: 37px;
+        overflow: hidden;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  &-info {
+    width: 59.5%;
+    padding: 95px 0 0 50px;
+    &__statistics_featured {
+      align-items: flex-start;
+      .estate-info__stat-item {
+        align-items: flex-start;
+      }
+      .state-info__stat-title {
+        font-weight: normal;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: $defaultGray;
+      }
+      .estate-info__figure-wrap {
+        width: 150px;
+        height: 150px;
+      }
+      .estate-info__stat {
+        background: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 15px 0;
+        margin: 0 -10px;
+        &-item {
+          flex-wrap: wrap;
+          width: 50%;
+          padding: 0 10px;
+        }
+      }
+      .state-info__stat-figure {
+        width: 100%;
+        text-align: left;
+        margin-left: 18px;
+        color: $defaultGray;
+        margin-top: 5px;
+      }
+      .estate-info__stat-elem {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        margin-top: 4px;
+      }
+      .estate-info__stat-info {
+        width: 100%;
+        margin-bottom: 5px;
+        &-inner {
+          width: 100%;
+          align-items: flex-start;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+    &__item {
+      margin-bottom: 37px;
+    }
+    .default-title {
+      margin-bottom: 12px;
+    }
+    .estate-info__descr  {
+      margin-bottom: 29px;
+      max-width: 734px;
+      p {
+        line-height: 200%;
+      }
+    }
+    .info-default {
+      border: 0;
+      background: $baseWhite;
+    }
+    &__btns {
+      display: flex;
+      .btn-default {
+        text-transform: uppercase;
+      }
+      .btn-default:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.wrapper .add-real-estate {
+  .estate-info__btns {
+    justify-content: flex-start;
+    .btn-default:first-child {
+      margin-right: 30px;
+    }
+  }
+}
+
+.estate-general__link-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: all .3s ease;
+  &:hover:not(.nuxt-link-active), &:hover:not(.active) {
+    transform: translateY(-4px);
+  }
+  &.passed {
+    .estate-general__link-elem:after {
+      opacity: 1;
+    }
+  }
+  &.nuxt-link-active, &.active {
+    .estate-general__link {
+      font-weight: bold;
+    }
+    .estate-general__link-elem:before {
+      background: $baseWhite;
+    }
+    .estate-general__link-elem:after {
+      opacity: 1;
+      background: $baseWhite;
+    }
+  }
+}
+
+.estate-general__link-elem {
+  width: 24px;
+  height: 30px;
+  background-color: $baseBlack;
+  position: relative;
+  display: inline-block;
+  &:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 2px solid $baseWhite;
+    top: 6px;
+    left: 0;
+    position: absolute;
+  }
+  &:after {
+    content: '';
+    width: 2px;
+    height: 500%;
+    background-color: rgba(255, 255, 255, .2);
+    position: absolute;
+    top: 100%;
+    left: 8px;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+}
+
+.add-real-estate .content-form__item-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.estate-general__link {
+  font-size: 20px;
+  margin-left: 14px;
+  color: $baseWhite;
+}
+
+.estate-general__links {
+  height: 100%;
+  background-color: $baseBlack;
+  &-inner {
+    max-width: 413px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+}
+
+.estate-info__drop {
+  min-height: 234px;
+  background: $lightBlue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px dashed $baseGray;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 45px;
+  transition: all .3s ease;
+  &.dragged-over {
+    border-width: 2px;
+    transition: all .3s ease;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 17px;
+    color: $baseGray;
+    text-transform: uppercase;
+  }
+  &-inner {
+    text-align: center;
+    max-width: 554px;
+    margin: 0 auto;
+  }
+  &-descr {
+    p {
+      font-size: 14px;
+      line-height: 200%;
+      color: $baseGray;
+    }
+  }
+  &-input {
+    display: none;
+  }
+  &-btn {
+    cursor: pointer;
+    position: relative;
+    color: $baseOrange;
+    &:before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      background: $baseOrange;
+      transition: all .3s ease;
+    }
+    &:hover:before {
+      width: 0;
+    }
+  }
+}
+
+.estate-info__section {
+  margin-bottom: 20px;
+  position: relative;
+  &-descr {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+  &-title {
+    margin-bottom: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $baseGray;
+  }
+  &-item {
+    width: 25%;
+    padding: 0 12px;
+    margin-bottom: 25px;
+    &-inner {
+      position: relative;
+      height: 180px;
+      img, video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .delete {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        background: $baseWhite;
+        border: 1px solid $baseBlack;
+        z-index: 10;
+        transition: all .3s ease;
+        opacity: 0;
+        cursor: pointer;
+        &:hover {
+          transform: rotate(360deg)
+        }
+        svg g {
+          opacity: 1
+        }
+      }
+      &:hover .delete {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.estate-info_drop-hint {
+  font-size: 14px;
+  text-align: center;
+  &-item {
+    display: inline-block;
+    margin: 15px 0 7px;
+    color: $baseRed;
+  }
+}
+
+.estate-info__chart-wrap {
+  margin-left: 5px;
+}
+
+.estate-info__item-descr {
+  margin-top: -5px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $baseGray;
+}
+
+.info-default__element.period  {
+  .select-trigger {
+    justify-content: flex-start;
+  }
+  .select-trigger-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-70%);
+  }
+  .select-container.active {
+    .select-trigger-icon {
+      transform: translateY(-70%) rotate(180deg);
+    }
+  }
+}
+
+.estate-info__figure-bold {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.info-default__select  {
+  .select-trigger-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    svg path {
+      fill: $baseBlack;
+    }
+  }
+  &.active {
+    .select-trigger-icon {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}
+
+.info-default {
+  &.select-inside {
+    padding: 15px 0 17px 19px;
+    .select-trigger {
+      padding: 0 10px;
+    }
+  }
+}
+
+.map-real-estate-info {
+  .real-estate__item:nth-child(n+4) {
+    display: none;
+  }
+  .real-estate__item {
+    margin-bottom: 20px;
+  }
+}
+
+.looking-seller {
+  .real-estate__item-not {
+    display: none;
+  }
+}
+
+.estate-general__links-item:last-child {
+  .estate-general__link-elem:after {
+    display: none;
+  }
+}

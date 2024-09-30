@@ -1,0 +1,20 @@
+[
+  {
+    "id" : "0",
+    "img" : "community1.jpg",
+    "name" : "Iberdrola",
+    "description" : "A few words of description..."
+  },
+  {
+    "id" : "1",
+    "img" : "community2.jpg",
+    "name" : "Sareb",
+    "description" : "A few words of description..."
+  },
+  {
+    "id" : "3",
+    "img" : "community3.jpg",
+    "name" : "Haya Real Estate",
+    "description" : "A few words of description..."
+  }
+]

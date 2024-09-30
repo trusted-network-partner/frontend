@@ -1,0 +1,149 @@
+.listing-services {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+
+.listing-services__title {
+  font-weight: bold;
+}
+
+.listing-services__btn {
+  min-width: 185px;
+  button {
+    text-transform: uppercase;
+    span {
+      margin-left: 4px;
+    }
+  }
+}
+
+.listing-services__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.listing-services__item {
+  padding: 0 15px;
+  width: 33.33%;
+}
+
+.listing-services__img {
+  &-wrap {
+    border-radius: $border-5;
+    overflow: hidden;
+    height: 179px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  position: relative;
+  display: block;
+  height: 100%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(
+        180deg
+      , rgba(21, 23, 28, 0) 46.37%, rgba(21, 23, 28, 0.7) 81.28%);
+    opacity: 0.3;
+    z-index: 1;
+  }
+}
+
+.listing-services__edit {
+  background: $baseWhite;
+  width: 27px;
+  height: 27px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 12px;
+  right: 11px;
+  overflow: hidden;
+  z-index: 3;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.listing-services__name {
+  font-weight: bold;
+  transition: all .3s ease;
+  margin-bottom: 7px;
+  color: $secondaryBlack;
+  display: inline-block;
+  //height: 50px;
+  overflow: hidden;
+  height: 21px;
+  text-overflow: ellipsis;
+  &:hover {
+    color: $baseOrange;
+  }
+}
+
+.listing-services__footer {
+  display: flex;
+  align-items: center;
+}
+
+.listing-services__address-wrap, .listing-services__date-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.listing-services__date-wrap {
+  svg {
+    width: 13px;
+    height: 14px;
+  }
+}
+
+.listing-services__address-wrap {
+  margin-right: 29px;
+}
+
+.listing-services__date, .listing-services__address {
+  font-size: 14px;
+  margin-left: 7px;
+  color: $baseGray;
+}
+
+.listing-services__section {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.listing-services__item {
+  margin-bottom: 30px;
+}
+
+.listing-services__btn {
+  .btn-default {
+    min-width: 185px;
+  }
+  span {
+    margin-left: 5px;
+  }
+}

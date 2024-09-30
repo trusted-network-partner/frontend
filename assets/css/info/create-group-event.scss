@@ -1,0 +1,336 @@
+.create-group-event {
+  margin-top: 35px;
+  max-width: 950px;
+}
+
+.content-form {
+  &__section {
+    padding-bottom: 48px;
+    border-bottom: 1px solid $thirdlyGray;
+    margin-bottom: 45px;
+    &:last-child {
+      border-bottom: 0;
+    }
+    &-title {
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      position: relative;
+      margin-bottom: 40px;
+      &:after {
+        content: '';
+        width: 36px;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $baseOrange;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    background: $lightWhite;
+    padding: 30px 25px 30px 30px;
+    overflow: hidden;
+    border-radius: $border-5;
+    position: relative;
+  }
+  &__item-img {
+    width: 119px;
+    height: 119px;
+    border: $border-5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    border-radius: $border-5;
+    background: $fifthlyGray;
+  }
+  &__item-info {
+    flex: 1;
+    padding-top: 10px;
+  }
+  &__item-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    max-width: 200px;
+    max-height: 20px;
+  }
+  &__item-descr {
+    max-height: 75px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 180%;
+    color: $baseGray;
+  }
+  &__item-label {
+    cursor: pointer;
+    input {
+      display: none;
+    }
+    &.absolute {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
+.content-form__item-check {
+  background: $baseWhite;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid $thirdlyGray;
+  transition: all .3s ease;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 17px;
+    height: 17px;
+    transition: all .3s ease;
+    opacity: 0;
+  }
+}
+
+.content-form__item-label input:checked + .content-form__item-check {
+  background: $baseOrange;
+  border-color: $baseOrange;
+  svg {
+    opacity: 1;
+  }
+}
+
+.content__form-options {
+  display: flex;
+  align-items: center;
+}
+
+.content__form-option .content-form__item-label {
+  display: flex;
+  align-items: center;
+  &:hover {
+    .content__form-option-text {
+      color: $baseOrange;
+    }
+  }
+}
+
+.content__form-option {
+  margin-right: 54px;
+  display: flex;
+  align-items: center;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.content__form-option-text {
+  margin-left: 15px;
+  letter-spacing: 0.02em;
+  color: $defaultBlack;
+  transition: all .3s ease;
+}
+
+.content-form__data-items {
+  display: flex;
+  align-items: center;
+  margin: -8px -15px 20px;
+}
+
+.content-form__data-item {
+  padding: 0 15px;
+  width: 50%;
+  & .date-input {
+    position: relative;
+    svg {
+      width: 12px;
+      height: 14px;
+    }
+    .date-label {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      span {
+        font-weight: 300;
+        font-size: 14px;
+        color: $baseGray;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.content-form__data-input {
+  width: 100%;
+  padding: 19px 20px;
+  height: 54px;
+  overflow: hidden;
+  border-radius: $border-5;
+  background: $baseWhite;
+  border: 1px solid $thirdlyGray;
+  font-weight: 500;
+  font-size: 14px;
+  &.textarea {
+    height: 170px;
+    padding-top: 13px;
+  }
+}
+
+.content-form__upload {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.content-form__upload-item {
+  margin-right: 30px;
+  width: calc(50% - 15px);
+  border-radius: $border-5;
+  overflow: hidden;
+  background: $lightWhite;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 50px;
+  height: 259px;
+  &:nth-child(2n) {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+.content-form__upload-label {
+  width: 77px;
+  height: 77px;
+  border-radius: $border-5;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $fifthlyGray;
+  cursor: pointer;
+  margin: 0 auto 25px;
+  input {
+    display: none;
+  }
+  svg {
+    transition:  all .3s ease;
+  }
+  &:hover {
+    svg path {
+      fill: $baseOrange;
+    }
+  }
+}
+.content-form__upload-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $baseGray;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-form__upload-descr {
+  color: $baseGray;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-form__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    min-width: 185px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.content-form__section.mb-0 {
+  margin-bottom: 0;
+  border: 0;
+  padding-bottom: 45px;
+}
+
+.content-form__item-wrap {
+  width: 32%;
+  max-width: 253px;
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: $border-5;
+  border: 1px solid $thirdlyGray;
+  margin-bottom: 20px;
+}
+
+.content-form__item-check.rounded {
+  border-radius: 50%;
+}
+
+.content-form__elem {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  &-check {
+    width: 119px;
+    height: 119px;
+    background: $baseWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-5;
+    margin-bottom: 14px;
+  }
+  &-title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s ease;
+  }
+  input:checked + .content-form__elem-check + .content-form__elem-title {
+    color: $baseOrange;
+  }
+  &:hover .content-form__elem-title {
+    color: $baseOrange;
+  }
+}
+
+.customer__info-single-category {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.customer__single-category__text {
+  margin-left: 10px;
+}

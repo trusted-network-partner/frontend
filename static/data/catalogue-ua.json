@@ -1,0 +1,38 @@
+[
+  {
+    "id" : "0",
+    "img" : "catalogue1.jpg",
+    "country" : "ІТАЛІЯ",
+    "views" : "6,340"
+  },
+  {
+    "id" : "1",
+    "img" : "catalogue2.jpg",
+    "country" : "ІСПАНІЯ",
+    "views" : "6,340"
+  },
+  {
+    "id" : "2",
+    "img" : "catalogue3.jpg",
+    "country" : "ТУРЕЧЧИНА",
+    "views" : "6,340"
+  },
+  {
+    "id" : "3",
+    "img" : "catalogue4.jpg",
+    "country" : "УКРАЇНА",
+    "views" : "6,340"
+  },
+  {
+    "id" : "4",
+    "img" : "catalogue5.jpg",
+    "country" : "РОСІЯ",
+    "views" : "6,340"
+  },
+  {
+    "id" : "5",
+    "img" : "catalogue6.jpg",
+    "country" : "АВСТРАЛІЯ",
+    "views" : "6,340"
+  }
+]

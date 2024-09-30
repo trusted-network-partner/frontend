@@ -1,0 +1,212 @@
+[
+  {
+    "id" : 0,
+    "img" : "pic1.jpg",
+    "name" : "Вілла на першій лінії пляжу",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 2,
+      "bath" : 2,
+      "area" : 90
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "350.000"
+  },
+  {
+    "id" : 1,
+    "img" : "pic4.jpg",
+    "name" : "Гарний будинок з великою ділянкою та приватною парковкою",
+    "address" : "Rivne Ukraine",
+    "location" : "Vylucia Rivnenska  33000",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 3,
+      "bath" : 3,
+      "area" : 150
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "330.000"
+  },
+  {
+    "id" : 2,
+    "img" : "pic5.jpg",
+    "name" : "Квартира в центрі міста",
+    "address" : "Valencia, Spain",
+    "location" : "Calle Ucrania 10 Valencia 46070",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 2,
+      "bath" : 1,
+      "area" : 70
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "250.000"
+  },
+  {
+    "id" : 3,
+    "img" : "pic6.jpg",
+    "name" : "Заміський будинок у тихому селі",
+    "address" : "Mishkovichi Ternopil",
+    "location" : "Vylucia  Shevchenka  47732",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 2,
+      "bath" : 2,
+      "area" : 90
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "150.000"
+  },
+  {
+    "id" : 4,
+    "img" : "pic7.jpg",
+    "name" : "Комерційна одиниця в центрі міста",
+    "address" : "Kiev, Ukraine",
+    "location" : "Vylucia Khreshchatik  01001",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 1,
+      "bath" : 1,
+      "area" : 50
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "70.000"
+  },
+  {
+    "id" : 5,
+    "img" : "pic8.jpg",
+    "name" : "Апартаменти для гольф-кузовів",
+    "address" : "Torrevieja, Spain",
+    "location" : "Calle Mexico 1  03183",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 2,
+      "bath" : 2,
+      "area" : 70
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "720.500"
+  },
+  {
+    "id" : 6,
+    "img" : "pic9.jpg",
+    "name" : "Міська ділянка в Альбатера",
+    "address" : "Albatera, Spain",
+    "location" : "Calle Montesinos 15  Albatera 03340",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 2,
+      "bath" : 2,
+      "area" : 90
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "445.450"
+  },
+  {
+    "id" : 7,
+    "img" : "pic10.jpg",
+    "name" : "Вілла з просторою ділянкою та зеленою зоною",
+    "address" : "Orihuela Costa, Spain",
+    "location" : "Calle Niagara 15 03189",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 2,
+      "bath" : 2,
+      "area" : 60
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "189.500"
+  },
+  {
+    "id" : 8,
+    "img" : "pic11.jpg",
+    "name" : "Лондонський пентхаус поруч із усіма зручностями",
+    "address" : "London, Great Britain",
+    "location" : "Oxford Street. London E1 7AX",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 1,
+      "bath" : 1,
+      "area" : 65
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller.png",
+      "name" : "Yana Baskal",
+      "phone" : "+34 677 130 650",
+      "email" : "Yana@gmail.com"
+    },
+    "price" : "99.900"
+  },
+  {
+    "id" : 9,
+    "img" : "pic13.jpg",
+    "name" : "Будинок в Майамі з прекрасним видом",
+    "address" : "Miami, USA",
+    "location" : "Miami, fl, USA 200",
+    "date" : "15.07.2019",
+    "features": {
+      "beds" : 2,
+      "bath" : 2,
+      "area" : 90
+    },
+    "seller": {
+      "id" : 101,
+      "img" : "pic-seller10.jpg",
+      "name" : "Vasiiy Lomachenko",
+      "phone" : "+34 677 130 650",
+      "email" : "Moizes@gmail.com"
+    },
+    "price" : "1.200.000"
+  }
+]
