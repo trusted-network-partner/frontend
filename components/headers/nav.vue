@@ -96,6 +96,11 @@ export default {
       justify-content: center;
       background: $baseOrange;
       margin-left: 14px;
+      @include maxMedia($breakpoint-lg) {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+      }
       &-inner {
         font-weight: 600;
         color: $baseWhite;

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "nuxt.config.js",
+    "pages/**/*.vue",
+    "components/**/*.vue",
+    "layouts/**/*.vue"
+  ]
+}

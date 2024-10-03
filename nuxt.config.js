@@ -18,6 +18,9 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
+  router: {
+    base: process.env.BASE_URL
+  },
 
   css: [],
 
@@ -32,7 +35,7 @@ export default {
     { src: "~/plugins/i18n" }
   ],
 
-  components: ["~/components", { path: "~/components/ui/", prefix: "ui" }],
+  components: true,
 
   buildModules: [],
 

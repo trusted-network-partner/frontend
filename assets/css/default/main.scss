@@ -1,4 +1,6 @@
 @import "./utils/fonts";
+@import "./utils/vars.scss";
+@import "./utils/mixins.scss";
 
 body {
   font-family: "Poppins", sans-serif;
@@ -154,7 +156,11 @@ textarea {
     padding-right: 30px;
     position: relative;
     z-index: 10;
+    @include maxMedia($breakpoint-lg) {
+      display: none;
+    }
   }
+
   &-auth {
     border-top: 1px solid $thirdlyGray;
   }
@@ -167,6 +173,10 @@ textarea {
 
 .content-wrap {
   width: 74.5%;
+
+  @include maxMedia($breakpoint-lg) {
+    width: 100%;
+  }
 }
 
 .container {
