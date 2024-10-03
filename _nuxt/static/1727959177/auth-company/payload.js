@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/auth-company", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/billing-methods", {data:[{}],fetch:{},mutations:[]});

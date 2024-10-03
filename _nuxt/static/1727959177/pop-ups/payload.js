@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pop-ups", {data:[{}],fetch:{},mutations:[]});

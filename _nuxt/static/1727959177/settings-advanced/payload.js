@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/settings-advanced", {data:[{}],fetch:{},mutations:[]});

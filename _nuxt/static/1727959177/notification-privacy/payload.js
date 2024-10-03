@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/notification-privacy", {data:[{}],fetch:{},mutations:[]});

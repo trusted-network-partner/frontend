@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/communities", {data:[{}],fetch:{"data-v-603808e8:0":{},"data-v-2b04a36b:0":{}},mutations:[]});

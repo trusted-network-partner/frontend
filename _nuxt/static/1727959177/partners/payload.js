@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/partners", {data:[{}],fetch:{"data-v-46c22814:0":{users:false}},mutations:[]});

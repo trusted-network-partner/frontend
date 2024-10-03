@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/visitors", {data:[{}],fetch:{"data-v-1200fcb7:0":{}},mutations:[]});

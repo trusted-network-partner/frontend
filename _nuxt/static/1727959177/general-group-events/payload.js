@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/general-group-events", {data:[{}],fetch:{"data-v-22790d72:0":{}},mutations:[]});

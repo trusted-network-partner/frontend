@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/news-events", {data:[{}],fetch:{"data-v-d9a12c64:0":{},"data-v-455f9922:0":{},"data-v-3ab61020:0":{}},mutations:[]});

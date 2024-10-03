@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/map-real-estate-search", (function(a){return {data:[{}],fetch:{"data-v-110ce4de:0":{optionsSelect:[{id:1,name:"Delete",value:"delete",chosen:true},{id:2,name:"Flag",value:"flag",chosen:a},{id:3,name:"Not interesting",value:"not-interesting",chosen:a}]}},mutations:[]}}(false)));

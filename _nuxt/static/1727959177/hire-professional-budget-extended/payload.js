@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/hire-professional-budget-extended", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/hire-professional-contact", {data:[{}],fetch:{},mutations:[]});
