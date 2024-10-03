@@ -1,0 +1,26 @@
+[
+  {
+    "id" : "0",
+    "img" : "event1.png",
+    "name" : "Google courses",
+    "author" : "Christopher Morgan",
+    "time" : "6h 30min",
+    "rating" : "4,9"
+  },
+  {
+    "id" : "1",
+    "img" : "event2.png",
+    "name" : "Figma courses",
+    "author" : "Christopher Morgan",
+    "time" : "6h 30min",
+    "rating" : "4,9"
+  },
+  {
+    "id" : "2",
+    "img" : "event3.png",
+    "name" : "ie bussiness school",
+    "author" : "Christopher Morgan",
+    "time" : "6h 30min",
+    "rating" : "4,9"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id" : 0,
+    "img" : "catalogue1.jpg",
+    "country" : "ITALY",
+    "views" : "6,340"
+  },
+  {
+    "id" : 1,
+    "img" : "catalogue2.jpg",
+    "country" : "SPAIN",
+    "views" : "6,340"
+  },
+  {
+    "id" : 2,
+    "img" : "catalogue3.jpg",
+    "country" : "TURKEY",
+    "views" : "6,340"
+  },
+  {
+    "id" : 3,
+    "img" : "catalogue4.jpg",
+    "country" : "UKRAINE",
+    "views" : "6,340"
+  },
+  {
+    "id" : 4,
+    "img" : "catalogue5.jpg",
+    "country" : "RUSSIA",
+    "views" : "6,340"
+  },
+  {
+    "id" : 5,
+    "img" : "catalogue6.jpg",
+    "country" : "AUSTRALIA",
+    "views" : "6,340"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "0",
+    "img" : "community2.png",
+    "label" : "Sareb",
+    "name" : "Bank",
+    "description" : "The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets"
+  },
+  {
+    "id" : "1",
+    "img" : "community3.png",
+    "label" : "Haya Real Estate",
+    "name" : "Managmant of assets in real estate",
+    "description" : "The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets"
+  },
+  {
+    "id" : "2",
+    "img" : "community4.png",
+    "label" : "Iberdrola",
+    "name" : "Light company",
+    "description" : "The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id" : "1",
+    "img" : "user1.jpg",
+    "name" : "Taras Buliak",
+    "descr" : "Real Assistant",
+    "status" : "Buyer",
+    "tel" : "+34 678 103 610",
+    "email" : "swarowsky@gmail.com"
+  },
+  {
+    "id" : "2",
+    "img" : "user2.jpg",
+    "name" : "Ascencion Cutillas",
+    "descr" : "Real Assistant",
+    "status" : "Seller",
+    "tel" : "+34 678 103 610",
+    "email" : "swarowsky@gmail.com"
+  },
+  {
+    "id" : "3",
+    "img" : "user3.jpg",
+    "name" : "Pepe Guardiola",
+    "descr" : "Real Assistant",
+    "status" : "Catcher",
+    "tel" : "+34 678 103 610",
+    "email" : "swarowsky@gmail.com"
+  },
+  {
+    "id" : "4",
+    "img" : "user4.jpg",
+    "name" : "Benjamin Pembroke",
+    "descr" : "API AZNAR",
+    "status" : "Buyer",
+    "tel" : "+34 678 103 610",
+    "email" : "swarowsky@gmail.com"
+  },
+  {
+    "id" : "5",
+    "img" : "user5.jpg",
+    "name" : "Andrea Gutierrez",
+    "descr" : "Real Assistant",
+    "status" : "Buyer",
+    "tel" : "+34 678 103 610",
+    "email" : "swarowsky@gmail.com"
+  },
+  {
+    "id" : "6",
+    "img" : "user6.jpg",
+    "name" : "Vera Levchik",
+    "descr" : "Real Assistant",
+    "status" : "Buyer",
+    "tel" : "+34 678 103 610",
+    "email" : "swarowsky@gmail.com"
+  },
+  {
+    "id" : "7",
+    "img" : "user7.jpg",
+    "name" : "Audrey Alexander",
+    "descr" : "Real Assistant",
+    "status" : "Buyer",
+    "tel" : "+34 678 103 610",
+    "email" : "swarowsky@gmail.com"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id" : "0",
+    "img" : "trusted1.png",
+    "name" : "Cooper Vaccaro",
+    "rating" : "5.0"
+  },
+  { "id" : "1",
+    "img" : "trusted2.png",
+    "name" : "Livia Mango",
+    "rating" : "5.0"
+  },
+  { "id" : "2",
+    "img" : "trusted3.png",
+    "name" : "Jordyn Lipshutz",
+    "rating" : "5.0"
+  }
+]

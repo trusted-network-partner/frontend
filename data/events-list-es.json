@@ -1,0 +1,20 @@
+[
+  {
+    "id" : "0",
+    "img" : "event1.jpg",
+    "name" : "Idealista webinar",
+    "description" : "Algunas palabras de descripción ..."
+  },
+  {
+    "id" : "1",
+    "img" : "event2.jpg",
+    "name" : "Yaencontre workshop",
+    "description" : "Algunas palabras de descripción ..."
+  },
+  {
+    "id" : "3",
+    "img" : "event3.jpg",
+    "name" : "Open house Gesco",
+    "description" : "Algunas palabras de descripción ..."
+  }
+]

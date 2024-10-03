@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 0,
+    "img" : "community1.png",
+    "label" : "Name of the group",
+    "name" : "Eli Lilly & Group",
+    "description" : "The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets"
+  },
+  {
+    "id" : 1,
+    "img" : "community1.png",
+    "label" : "Name of the assotiation",
+    "name" : "Eli Lilly & Assotiation",
+    "description" : "The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets"
+  },
+  {
+    "id" : 2,
+    "img" : "community1.png",
+    "label" : "Name of the company",
+    "name" : "Eli Lilly & Company",
+    "description" : "The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets"
+  }
+]

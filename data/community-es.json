@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "0",
+    "img" : "community2.png",
+    "label" : "Sareb",
+    "name" : "Bank",
+    "description" : "El pasaje experimentó un aumento en popularidad durante la década de 1960 cuando Letraset lo usó en sus hojas de transferencia en seco."
+  },
+  {
+    "id" : "1",
+    "img" : "community3.png",
+    "label" : "Haya Real Estate",
+    "name" : "Managmant of assets in real estate",
+    "description" : "El pasaje experimentó un aumento en popularidad durante la década de 1960 cuando Letraset lo usó en sus hojas de transferencia en seco."
+  },
+  {
+    "id" : "2",
+    "img" : "community4.png",
+    "label" : "Iberdrola",
+    "name" : "Light company",
+    "description" : "El pasaje experimentó un aumento en popularidad durante la década de 1960 cuando Letraset lo usó en sus hojas de transferencia en seco."
+  }
+]

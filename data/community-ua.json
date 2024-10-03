@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "0",
+    "img" : "community2.png",
+    "label" : "Sareb",
+    "name" : "Bank",
+    "description" : "Прохід зазнав різкого зростання популярності в 1960-х, коли Letraset використовував його на своїх аркушах із сухим перекладом"
+  },
+  {
+    "id" : "1",
+    "img" : "community3.png",
+    "label" : "Haya Real Estate",
+    "name" : "Managmant of assets in real estate",
+    "description" : "Прохід зазнав різкого зростання популярності в 1960-х, коли Letraset використовував його на своїх аркушах із сухим перекладом"
+  },
+  {
+    "id" : "2",
+    "img" : "community4.png",
+    "label" : "Iberdrola",
+    "name" : "Light company",
+    "description" : "Прохід зазнав різкого зростання популярності в 1960-х, коли Letraset використовував його на своїх аркушах із сухим перекладом"
+  }
+]

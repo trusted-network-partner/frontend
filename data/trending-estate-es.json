@@ -1,0 +1,19 @@
+[
+  {
+    "id" : 0,
+    "img" : "estate1.png",
+    "name" : "Apartamento estudio",
+    "views" : "6,340"
+  },
+  {
+    "id" : 1,
+    "img" : "estate2.png",
+    "name" : "Villa en Kiev",
+    "views" : "6,340"
+  },
+  { "id" : 2,
+    "img" : "estate3.png",
+    "name" : "Apartamento en NYC",
+    "views" : "6,340"
+  }
+]

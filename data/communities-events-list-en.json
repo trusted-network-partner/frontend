@@ -1,0 +1,82 @@
+[
+  {
+    "id" : 0,
+    "img" : "pic1.jpg",
+    "name" : "Idealista workshop",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 1,
+    "img" : "pic2.jpg",
+    "name" : "Yaencontre webinar",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 2,
+    "img" : "pic3.jpg",
+    "name" : "IES BUSSINESS SCHOOL",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 3,
+    "img" : "pic4.jpg",
+    "name" : "OPEN HOUSE INMO GESCO",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 4,
+    "img" : "pic5.jpg",
+    "name" : "REMAX ASSOTIATION",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 5,
+    "img" : "pic6.jpg",
+    "name" : "IBERDROLA",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 6,
+    "img" : "pic7.jpg",
+    "name" : "REPSOL",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 7,
+    "img" : "pic8.jpg",
+    "name" : "EDP COMPANY",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 8,
+    "img" : "pic9.jpg",
+    "name" : "NATURGY",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  },
+  {
+    "id" : 9,
+    "img" : "pic1.jpg",
+    "name" : "Cooperation team",
+    "address" : "Torrevieja Spain",
+    "location" : "Calle Finlandia 10 3ºB Torrevieja 03183",
+    "rating" : 4.87
+  }
+]
