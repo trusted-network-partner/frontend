@@ -1,7 +1,7 @@
 @import "./utils/fonts";
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 125%;
@@ -13,11 +13,18 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -58,14 +65,17 @@ select,
 button,
 textarea {
   outline: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   //height: 100%;
   width: 100%;
   overflow: auto;
@@ -87,7 +97,9 @@ img {
   max-width: 100%;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -95,7 +107,7 @@ input, textarea, button {
 }
 
 button {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -103,7 +115,8 @@ button {
   padding: 0;
 }
 
-input, textarea {
+input,
+textarea {
   &::-webkit-input-placeholder {
     font-family: Poppins, sans-serif;
     font-weight: 300;
@@ -122,10 +135,10 @@ input, textarea {
     font-size: 14px;
     color: $baseGray;
   }
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &:focus:not(.search__input) {
-    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,.08);
-    box-shadow: 0 0 1px 1px rgba(0,0,0,.08);
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -157,7 +170,8 @@ input, textarea {
 }
 
 .container {
-  width: 1470px;
+  max-width: 1470px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -187,7 +201,7 @@ input, textarea {
   z-index: 1000;
   display: flex;
   width: 200px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: translateX(-202px);
   transform: translateX(-202px);
   background: #ffffff;
@@ -223,12 +237,13 @@ input, textarea {
   color: #707070;
   font-size: 14px;
   font-weight: 400;
-  transition: .3s;
+  transition: 0.3s;
   &:hover {
-    color: #3680FB;
+    color: #3680fb;
   }
 }
-.menu_click, .menu_click button {
+.menu_click,
+.menu_click button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,8 +252,8 @@ input, textarea {
   padding: 20px;
   font-weight: 500;
   font-size: 14px;
-  color: #3680FB;
-  border-bottom: 1px dashed #EAF0FA;
+  color: #3680fb;
+  border-bottom: 1px dashed #eaf0fa;
 }
 .menu_click button {
   font-weight: 700;
@@ -247,18 +262,18 @@ input, textarea {
   height: 100%;
   cursor: pointer;
   color: #000;
-  border: 1px solid #BBCDEE;
+  border: 1px solid #bbcdee;
   outline: unset;
-  background: #F8FAFE;
+  background: #f8fafe;
   border-radius: 6px;
   .icon-drop {
     width: 12px;
     height: 7px;
-    fill: #BBCDEE;
+    fill: #bbcdee;
   }
 }
 .menu_wrap_active {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: translateX(2%);
   transform: translateX(2%);
 }
@@ -278,7 +293,7 @@ input, textarea {
   text-transform: uppercase;
   padding-bottom: 10px;
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 36px;
     height: 4px;
@@ -299,10 +314,10 @@ input, textarea {
   &__text {
     text-transform: uppercase;
     margin-left: 19px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   svg path {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover {
     color: $baseOrange;
@@ -313,10 +328,10 @@ input, textarea {
   }
 }
 
-.main-auth .info-default__value:focus, .wrapper .info-default__value.no-focus:focus {
+.main-auth .info-default__value:focus,
+.wrapper .info-default__value.no-focus:focus {
   box-shadow: 0 0 0px 0px rgb(0, 0, 0, 0);
 }
-
 
 .rating {
   &-stars {
@@ -352,7 +367,7 @@ input, textarea {
 }
 
 .pagination-item {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   background: $baseWhite;
   width: 42px;
   height: 42px;
@@ -364,12 +379,13 @@ input, textarea {
   cursor: pointer;
   span {
     font-size: 18px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:last-child {
     margin-right: 0;
   }
-  &:hover, &.active {
+  &:hover,
+  &.active {
     background: $baseBlack;
     span {
       font-weight: bold;
@@ -398,15 +414,12 @@ input, textarea {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  &__info {
-    width: 59%;
-  }
 }
-.main-auth{
+.main-auth {
   position: relative;
   min-height: calc(100vh - 60px);
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -426,14 +439,15 @@ input, textarea {
   }
 }
 
-.swiper-button-prev,  .swiper-button-next  {
-  transition: all .3s ease;
+.swiper-button-prev,
+.swiper-button-next {
+  transition: all 0.3s ease;
   border: 1px solid transparent;
   path {
     fill: $baseBlack;
   }
   &:hover {
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -443,7 +457,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -474,8 +488,6 @@ input[type=number] {
 @import "../info/info";
 @import "../info/communities-events";
 
-
-
 @import "../info/create-group-event";
 
 @import "../profile/agent-profile";
@@ -483,7 +495,6 @@ input[type=number] {
 //ref
 @import "../property/property";
 @import "../agent/agent-info-content";
-
 
 @import "../agent/info";
 

@@ -1,0 +1,42 @@
+@import "~/assets/css/default/utils/vars.scss";
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100;
+  padding: 40px;
+  background: $baseWhite;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  transition: all 0.7s ease;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    // left: 0;
+  }
+
+  &__another-content {
+    margin-top: 70px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+
+    .currency {
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+  }
+
+  &__burger {
+    align-self: flex-end;
+  }
+}

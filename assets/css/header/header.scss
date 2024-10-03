@@ -7,12 +7,45 @@
       width: 100%;
     }
   }
+
+  &__notifications,
+  &__account {
+    @include maxMedia($breakpoint-sm) {
+      &.expanded-search {
+        display: none;
+      }
+    }
+  }
+
+  &__search.expanded-search {
+    width: 100%;
+  }
+
   &__logo {
     width: 25.5%;
+    flex-shrink: 1;
+    white-space: nowrap;
+    @include maxMedia($breakpoint-sm) {
+      .logo {
+        white-space: normal;
+      }
+    }
+    @include maxMedia($breakpoint-md) {
+      &.expanded-search {
+        display: none;
+      }
+    }
+    @include maxMedia($breakpoint-lg) {
+      width: fit-content;
+      // width: 100%;
+    }
     padding-right: 30px;
   }
   &__info {
     width: 74.5%;
+    @include maxMedia($breakpoint-lg) {
+      width: 100%;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,16 +53,37 @@
   &__nav {
     width: 50%;
     max-width: 491px;
+    @include maxMedia($breakpoint-xl) {
+      max-width: auto;
+      width: 100%;
+    }
   }
   &__info-right {
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    flex-shrink: 0;
     max-width: 445px;
     margin-left: auto;
+
+    @include maxMedia($breakpoint-md) {
+      gap: 15px;
+    }
+
+    @include maxMedia($breakpoint-xl) {
+      flex-shrink: 0;
+    }
+
+    @include maxMedia($breakpoint-xl) {
+      max-width: 100%;
+      justify-content: flex-end;
+      flex-shrink: 1;
+    }
   }
   &__currency {
+    display: block;
     .select-value-item {
       font-weight: 500;
       color: $baseBlack;
@@ -41,10 +95,49 @@
         fill: $baseBlack;
       }
     }
+
+    @include maxMedia($breakpoint-sm) {
+      &.expanded-search {
+        display: none;
+      }
+    }
+
+    @include maxMedia($breakpoint-lg) {
+      display: none;
+    }
   }
   &__btn {
     width: 50%;
     max-width: 185px;
+    display: block;
+
+    @include maxMedia($breakpoint-sm) {
+      &.expanded-search {
+        display: none;
+      }
+    }
+
+    @include maxMedia($breakpoint-xl) {
+      display: none;
+    }
+  }
+
+  &__btn .button-new-real-estate {
+    white-space: nowrap;
+  }
+
+  &__burger {
+    display: none;
+
+    @include maxMedia($breakpoint-sm) {
+      &.expanded-search {
+        display: none;
+      }
+    }
+
+    @include maxMedia($breakpoint-lg) {
+      display: block;
+    }
   }
 }
 

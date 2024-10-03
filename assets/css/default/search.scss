@@ -2,7 +2,9 @@
   transition: all .3s ease;
   width: auto;
   &.expanded {
-    width: 647px;
+    width: 100%;
+    // pos
+    // width: 647px;
     .search__btn {
       margin-right: 20px;
     }
