@@ -34,7 +34,7 @@ jobs:
         run: npm run generate
 
       - name: Check if dist directory exists
-        run: ls -la ./dist  
+        run: ls -la ./dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -44,9 +44,12 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment  # Add an ID to this step to reference its outputs later
         uses: actions/deploy-pages@v4
+
+      - name: Output page URL
+        run: echo "Deployed site URL: ${{ steps.deployment.outputs.page_url }}"
