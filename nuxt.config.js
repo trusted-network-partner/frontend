@@ -4,6 +4,7 @@ if (process.env.NODE_ENV !== "dev") {
   require("dotenv").config({ path: "./keys/.env.dev" });
 }
 export default {
+  target: "static",
   mode: "universal",
   env: process.env,
   head: {
