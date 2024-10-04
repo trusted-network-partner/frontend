@@ -58,7 +58,7 @@ import PenIcon from "@/components/icons/profile/pen";
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .communities-events__img:after {
     display: none;
   }

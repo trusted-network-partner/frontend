@@ -1,8 +1,11 @@
 .create-post {
   background: $lightWhite;
-  border-radius:  8px;
+  border-radius: 8px;
   padding: 37px 40px 40px;
   margin-bottom: 44px;
+  @include maxMedia($breakpoint-md) {
+    padding: 30px;
+  }
   &__header {
     display: flex;
     align-items: center;
@@ -24,6 +27,12 @@
       left: 0;
       background: $baseOrange;
     }
+    @include maxMedia($breakpoint-md) {
+      font-size: 16px;
+    }
+    @include maxMedia($breakpoint-sm) {
+      font-size: 14px;
+    }
   }
   &__form {
     display: flex;
@@ -42,6 +51,10 @@
     border: 0;
     height: 76px;
     padding: 26px 55px 26px 20px;
+    @include maxMedia($breakpoint-md) {
+      height: 50px;
+      padding: 15px 55px 15px 20px;
+    }
     &::-webkit-input-placeholder {
       font-weight: 300;
       font-size: 16px;
@@ -62,7 +75,7 @@
     transform: translateY(-63%);
     cursor: pointer;
     svg path {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
     &:hover svg path {
       fill: $baseOrange;
@@ -75,8 +88,11 @@
     align-items: center;
     justify-content: center;
     background: $baseBlack;
+    @include maxMedia($breakpoint-md) {
+      height: 50px;
+    }
     svg path {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
     &:hover {
       svg path {
@@ -100,7 +116,7 @@
       }
     }
     svg path {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
   }
   &__item {

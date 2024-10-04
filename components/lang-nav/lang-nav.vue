@@ -5,10 +5,10 @@
         v-for="(language, index) in languages"
         :key="index"
         class="languages__item"
-        :class="{'active' : language.code === $i18n.locale}"
+        :class="{ active: language.code === $i18n.locale }"
         @click="selectLang(language.code, index)"
       >
-        {{language.name}}
+        {{ language.name }}
       </li>
       <li class="languages__item">
         Português
@@ -22,9 +22,9 @@
       <li class="languages__item">
         Polski
       </li>
-<!--      <li class="languages__item">-->
-<!--        Українська-->
-<!--      </li>-->
+      <!--      <li class="languages__item">-->
+      <!--        Українська-->
+      <!--      </li>-->
       <li class="languages__item">
         Русский
       </li>
@@ -38,30 +38,34 @@
   </div>
 </template>
 
-
 <script src="~/components/lang-nav/index.js"></script>
 
 <style lang="scss" scoped>
-  .languages {
-    &__list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-left: auto;
-    }
-    &__item {
-      transition: all .3s ease;
-      cursor: pointer;
-      margin-left: 5px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:hover {
-        color: $baseOrange;
-      }
+.languages {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+
+    @include maxMedia($breakpoint-md) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
     }
   }
-  .languages__item.active {
-    font-weight: 600;
+  &__item {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      color: $baseOrange;
+    }
   }
+}
+.languages__item.active {
+  font-weight: 600;
+}
 </style>
