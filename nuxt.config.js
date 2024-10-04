@@ -5,6 +5,9 @@ if (process.env.NODE_ENV !== "dev") {
 }
 export default {
   target: "static",
+  generate: {
+    dir: "dist"
+  },
   mode: "universal",
   env: process.env,
   head: {
