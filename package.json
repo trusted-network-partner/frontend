@@ -9,6 +9,9 @@
     "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "apexcharts": "^3.26.1",
     "cookie-universal-nuxt": "^2.0.17",
