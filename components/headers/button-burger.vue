@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style scoped>
-@import "~assets/css/header/button-burger.scss";
+@import "~/assets/css/header/button-burger.scss";
 </style>
