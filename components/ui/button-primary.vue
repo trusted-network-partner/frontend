@@ -3,6 +3,7 @@
     :is="to ? 'nuxt-link' : 'button'"
     :to="to"
     class="btn-default  black"
+    v-on="$listeners"
   >
     <slot />
   </component>

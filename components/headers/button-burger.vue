@@ -14,7 +14,7 @@ export default {
       default: false
     }
   },
-  emits: ["update:value"],
+  emits: ["update:value", "action"],
   methods: {
     switchMenu() {
       this.$emit("action", this.value);
