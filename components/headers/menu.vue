@@ -4,7 +4,7 @@
     :class="{ active: isMenuShown }"
     v-click-outside="selectClick"
   >
-    <div class="account" @click="isMenuShown = !isMenuShown">
+    <div class="account-dropdown" @click="isMenuShown = !isMenuShown">
       <div class="account__name">
         RB
       </div>
@@ -111,10 +111,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import "~/assets/css/default/utils/vars.scss";
-
-.account {
+<style lang="scss">
+.account-dropdown {
   cursor: pointer;
   width: 50px;
   height: 50px;
