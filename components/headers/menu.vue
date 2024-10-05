@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="select-container account-wrap "
-    :class="{ active: isMenuShown }"
-
-  >
+  <div class="select-container account-wrap " :class="{ active: isMenuShown }">
     <div class="account" @click="isMenuShown = !isMenuShown">
       <div class="account__name">
         RB
@@ -112,17 +108,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .account {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: $border-5;
-  background: $fifthlyGray;
-  position: relative;
+  & {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-5;
+    background: $fifthlyGray;
+    position: relative;
+  }
+
   &__name {
     font-weight: 600;
     font-size: 18px;
