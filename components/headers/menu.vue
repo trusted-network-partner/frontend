@@ -111,8 +111,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.select-container  .account-dropdown {
+<style lang="scss" >
+.account-dropdown {
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -142,7 +142,7 @@ export default {
     }
   }
 }
-.select-container  .account-dropdown .nuxt-link-exact-active {
+.account-dropdown .nuxt-link-exact-active {
   font-weight: bold;
   color: $baseOrange;
 }
