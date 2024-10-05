@@ -111,7 +111,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .select-container  .account-dropdown {
   cursor: pointer;
   width: 50px;
