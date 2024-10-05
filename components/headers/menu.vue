@@ -108,19 +108,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.account {
-  & {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: $border-5;
-    background: $fifthlyGray;
-    position: relative;
-  }
+.account-wrap .account {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-5;
+  background: $fifthlyGray;
+  position: relative;
+}
 
+.account {
   &__name {
     font-weight: 600;
     font-size: 18px;
