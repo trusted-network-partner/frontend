@@ -2,9 +2,9 @@
   <div
     class="select-container account-wrap "
     :class="{ active: isMenuShown }"
-    v-click-outside="selectClick"
+
   >
-    <div class="account-dropdown" @click="isMenuShown = !isMenuShown">
+    <div class="account" @click="isMenuShown = !isMenuShown">
       <div class="account__name">
         RB
       </div>
@@ -111,8 +111,9 @@ export default {
 };
 </script>
 
-<style lang="scss" >
-.account-dropdown {
+<style lang="scss" scoped>
+
+.account {
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -142,7 +143,7 @@ export default {
     }
   }
 }
-.account-dropdown .nuxt-link-exact-active {
+.nuxt-link-exact-active {
   font-weight: bold;
   color: $baseOrange;
 }
