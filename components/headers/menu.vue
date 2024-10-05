@@ -1,10 +1,10 @@
 <template>
   <div class="select-container account-wrap " :class="{ active: isMenuShown }">
-    <div class="account" @click="isMenuShown = !isMenuShown">
-      <div class="account__name">
+    <div class="account-wrap" @click="isMenuShown = !isMenuShown">
+      <div class="account-wrap__name">
         RB
       </div>
-      <div class="account__icon select-trigger-icon">
+      <div class="account-wrap__icon select-trigger-icon">
         <TriangleIcon />
       </div>
     </div>
