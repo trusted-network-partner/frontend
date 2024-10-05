@@ -162,12 +162,6 @@ export default {
     }
   },
   mounted() {
-    // if (this.selectOptions) {
-    //   this.selectedOption = this.selectOptions[0].name;
-    //   if (this.selectOptions[0].isDefault) {
-    //     this.isDefaultOption = true;
-    //   }
-    // }
     window.addEventListener("resize", this.handleResize);
     window.addEventListener("scroll", this.handleResize);
   },
