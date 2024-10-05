@@ -142,7 +142,7 @@ export default {
     }
   }
 }
-.nuxt-link-exact-active {
+.account-dropdown .nuxt-link-exact-active {
   font-weight: bold;
   color: $baseOrange;
 }
