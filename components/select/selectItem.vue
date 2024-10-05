@@ -101,14 +101,12 @@ export default {
           const spaceRight = window.innerWidth - triggerRect.right;
           const spaceLeft = triggerRect.left;
 
-          // Определяем, в каком направлении открывать меню (вверх или вниз)
           if (spaceBelow < dropdownHeight && spaceAbove > dropdownHeight) {
             this.isOpenUp = true;
           } else {
             this.isOpenUp = false;
           }
 
-          // Определяем, в каком направлении выровнять меню (влево или вправо)
           if (spaceRight < dropdownWidth && spaceLeft > dropdownWidth) {
             this.isAlignRight = true;
           } else {
