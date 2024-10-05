@@ -1,9 +1,9 @@
 <template>
-  <div  :class="{ active: isActive }" class="mobile-menu">
+  <div :class="{ active: isActive }" class="mobile-menu">
     <div class="mobile-menu__burger">
       <ButtonBurger :value="true" @action="closeMenu"></ButtonBurger>
     </div>
-    <Nav type="mobile" />
+    <Nav type="mobile" @generalAction="closeMenu" />
     <div class="mobile-menu__another-content">
       <Currency></Currency>
       <ButtonPrimary @click="closeMenu" class="" to="real-estate-address">
@@ -32,7 +32,10 @@ export default {
       required: true
     }
   },
-  emits: ["update:isActive"],
+  model: {
+    prop: "isActive",
+    event: "update:isActive"
+  },
   methods: {
     closeMenu() {
       this.$emit("update:isActive", false);

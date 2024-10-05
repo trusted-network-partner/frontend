@@ -62,7 +62,6 @@ export default {
   methods: {
     switchFilters(value) {
       this.isModalFilters = value;
-      console.log(this.isModalFilters);
     }
   }
 };

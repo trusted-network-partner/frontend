@@ -113,6 +113,9 @@ export default {
     align-self: flex-start;
     border-radius: 0 $border-5 $border-5 0;
     max-width: 350px;
+    min-height: 100%;
+    overflow: auto;
+    overscroll-behavior: contain;
   }
 }
 </style>

@@ -2,16 +2,35 @@
   <main class="main-info">
     <div class="real-estate-wrap">
       <nuxt-link to="real-estate" class="section-back">
-        <ArrowLeftIcon/>
+        <ArrowLeftIcon />
         <span class="section-back__text">
-         {{ $t('back_listing') }}
+          {{ $t("back_listing") }}
         </span>
       </nuxt-link>
       <div class="real-estate__info-wrap">
-       <RealEstateGallery />
+        <RealEstateGallery />
         <div class="real-estate__details-wrap">
-          <div class="real-estate__details">
-            <RealEstateDetails />
+          <div class="real-estate__header">
+            <div class="estate-info__general">
+              <div class="estate-info__general-item rating">
+                <StarIcon />
+                <span class="estate-info__general-text">
+                  <span class="bold">5.00</span> (98)
+                </span>
+              </div>
+              <div class="estate-info__general-item">
+                <AddressIcon />
+                <span class="estate-info__general-text">
+                  {{ $t("kiev_ukraine") }}
+                </span>
+              </div>
+              <div class="estate-info__general-item">
+                <span class="estate-info__general-text">
+                  Calle Finlandia 10 3ºB Torrevieja 03183
+                </span>
+              </div>
+            </div>
+            <h2 class="estate-info__title">{{ $t("villa_kiev") }}</h2>
           </div>
           <div class="real-estate__aside">
             <RealEstateGeneral
@@ -23,54 +42,40 @@
               @registerCustomerPopUp="registerCustomerPopUp"
             />
           </div>
+          <div class="real-estate__details">
+            <RealEstateDetails />
+          </div>
         </div>
       </div>
     </div>
     <div class="pop-ups">
-      <DatePopup
-        ref="datePopUp"
-      />
-      <InquiryPopup
-        ref="inquiryPopUp"
-        @formSubmit="formSubmit"
-      />
-      <SuccessPopup
-        :successText="successText"
-        ref="successPopUp"
-      />
-      <PaymentPopup
-        ref="paymentPopUp"
-        @paymentSubmit="paymentSubmit"
-      />
-      <RegisterCustomerPopUp
-        ref="registerCustomerPopUp"
-      />
-      <CalendarPopup
-        ref="calendarPopup"
-      />
-      <PartnerCommissionPopUp
-        ref="partnerCommissionPopUp"
-      />
+      <DatePopup ref="datePopUp" />
+      <InquiryPopup ref="inquiryPopUp" @formSubmit="formSubmit" />
+      <SuccessPopup :successText="successText" ref="successPopUp" />
+      <PaymentPopup ref="paymentPopUp" @paymentSubmit="paymentSubmit" />
+      <RegisterCustomerPopUp ref="registerCustomerPopUp" />
+      <CalendarPopup ref="calendarPopup" />
+      <PartnerCommissionPopUp ref="partnerCommissionPopUp" />
     </div>
   </main>
 </template>
 
 <script>
-import RealEstateList from '~/components/property/real-estate-list'
-import ArrowLeftIcon from '~/components/icons/common/arrow-left'
-import RealEstateGallery from '~/components/property/real-estate-gallery'
-import RealEstateDetails from '~/components/property/real-estate-details'
-import RealEstateGeneral from '~/components/property/real-estate-general'
-import InquiryPopup from '~/components/pop-ups/type-inquiry-pop-up'
-import PaymentPopup from '~/components/pop-ups/payment-pop-up'
-import SuccessPopup from '~/components/pop-ups/pop-up-success'
-import CalendarPopup from '~/components/pop-ups/calendar-pop-up'
-import RegisterCustomerPopUp from '~/components/pop-ups/register-customer-pop-up'
-import DatePopup from '~/components/pop-ups/date-pop-up'
-import PartnerCommissionPopUp from '~/components/pop-ups/partner-comision-value'
+import RealEstateList from "~/components/property/real-estate-list";
+import ArrowLeftIcon from "~/components/icons/common/arrow-left";
+import RealEstateGallery from "~/components/property/real-estate-gallery";
+import RealEstateDetails from "~/components/property/real-estate-details";
+import RealEstateGeneral from "~/components/property/real-estate-general";
+import InquiryPopup from "~/components/pop-ups/type-inquiry-pop-up";
+import PaymentPopup from "~/components/pop-ups/payment-pop-up";
+import SuccessPopup from "~/components/pop-ups/pop-up-success";
+import CalendarPopup from "~/components/pop-ups/calendar-pop-up";
+import RegisterCustomerPopUp from "~/components/pop-ups/register-customer-pop-up";
+import DatePopup from "~/components/pop-ups/date-pop-up";
+import PartnerCommissionPopUp from "~/components/pop-ups/partner-comision-value";
 export default {
-  layout: 'default',
-  name: 'real-estate-info',
+  layout: "default",
+  name: "real-estate-info",
 
   components: {
     PartnerCommissionPopUp,
@@ -84,61 +89,61 @@ export default {
     PaymentPopup,
     SuccessPopup,
     DatePopup,
-    CalendarPopup,
+    CalendarPopup
   },
 
   head: {
-    title: 'Real estate'
+    title: "Real estate"
   },
 
   data() {
     return {
-      successText: '',
-      isInquiryPopUpShown: false,
-    }
+      successText: "",
+      isInquiryPopUpShown: false
+    };
   },
 
   methods: {
     inquiryPopUp() {
-      this.$refs.inquiryPopUp.open()
+      this.$refs.inquiryPopUp.open();
     },
     datePopUp() {
-      this.$refs.datePopUp.open()
+      this.$refs.datePopUp.open();
     },
     popUpClose() {
-      this.successText = ''
+      this.successText = "";
     },
     formSubmit() {
-      this.$refs.successPopUp.open()
-      this.$refs.inquiryPopUp.close()
-      this.successText = 'Your  application was submitted'
+      this.$refs.successPopUp.open();
+      this.$refs.inquiryPopUp.close();
+      this.successText = "Your  application was submitted";
     },
     calendarPopUp() {
-      this.$refs.calendarPopup.open()
+      this.$refs.calendarPopup.open();
     },
     paymentPopUp() {
-      this.$refs.paymentPopUp.open()
+      this.$refs.paymentPopUp.open();
     },
     registerCustomerPopUp() {
-      this.$refs.registerCustomerPopUp.open()
+      this.$refs.registerCustomerPopUp.open();
     },
     partnerCommissionPopUp() {
-      this.$refs.partnerCommissionPopUp.open()
+      this.$refs.partnerCommissionPopUp.open();
     },
     paymentSubmit() {
-      this.$refs.successPopUp.open()
-      this.successText = 'Your  payment was submitted'
+      this.$refs.successPopUp.open();
+      this.successText = "Your  payment was submitted";
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-  .real-estate-wrap {
-    margin-bottom: 147px;
-    position: relative;
-  }
-  .main-info {
-    margin-top: 35px;
-  }
+.real-estate-wrap {
+  margin-bottom: 147px;
+  position: relative;
+}
+.main-info {
+  margin-top: 35px;
+}
 </style>

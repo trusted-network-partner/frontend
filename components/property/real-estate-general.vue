@@ -112,7 +112,7 @@
       </div>
       <nuxt-link
         to="chat"
-        class="btn-default black"
+        class="btn-default send-message-btn black"
       >
         {{ $t('send_message') }}
       </nuxt-link>

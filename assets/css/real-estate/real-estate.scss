@@ -284,22 +284,38 @@
 
 .real-estate__gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  gap: 30px;
   margin-bottom: 42px;
+  @include maxMedia($breakpoint-lg) {
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .real-estate__gallery-left {
   width: 65.8%;
+  @include maxMedia($breakpoint-lg) {
+    width: 100%;
+  }
 }
 
 .real-estate__gallery-right {
   width: 34.2%;
-  padding-left: 30px;
+  @include maxMedia($breakpoint-lg) {
+    width: 100%;
+  }
 }
 
 .real-estate__gallery-items {
   display: flex;
+
   margin: 0 -15px;
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .real-estate__main-img {
@@ -310,6 +326,9 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  @include maxMedia($breakpoint-lg) {
+    height: 350px;
+  }
 }
 
 .real-estate-big-img {
@@ -390,6 +409,9 @@
 .real-estate__gallery-item {
   padding: 0 15px;
   width: 50%;
+  @include maxMedia($breakpoint-md) {
+    width: 100%;
+  }
 }
 
 .real-estate__gallery-item-inner {
@@ -408,12 +430,23 @@
 }
 
 .real-estate__details-wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: 60% auto;
+  column-gap: 80px;
+  // grid-template-rows: 1fr 1fr;
+  @include maxMedia($breakpoint-xl) {
+    grid-template-columns: 50% auto;
+  }
+  @include maxMedia($breakpoint-lg) {
+    gap: 0px;
+    grid-template-columns: 100%;
+  }
 }
 
 .estate-info__general {
   display: flex;
   margin-bottom: 27px;
+  flex-wrap: wrap;
 }
 
 .estate-info__general-item {
@@ -463,6 +496,7 @@
   color: $baseGray;
   line-height: 16px;
   letter-spacing: -0.1px;
+  line-height: 120%;
 }
 
 .estate-info__title {
@@ -470,15 +504,23 @@
   margin-bottom: 41px;
   border-bottom: 1px solid $thirdlyGray;
   font-size: 36px;
+  line-height: 120%;
+
+  @include maxMedia($breakpoint-md) {
+    font-size: 26px;
+  }
+  @include maxMedia($breakpoint-lg) {
+    font-size: 28px;
+  }
 }
 
 .real-estate__details {
-  width: 57.5%;
+  // width: 57.5%;
+  // grid-row: span 2 / span 2;
 }
 
 .real-estate__aside {
-  width: 42.5%;
-  padding-left: 80px;
+  grid-row: span 2 / span 2;
 }
 
 .estate-info__descr p {
@@ -515,15 +557,26 @@
   display: flex;
   margin-bottom: 39px;
   justify-content: space-between;
+  gap: 90px;
+
   &.facts {
     max-width: 730px;
     padding-top: 10px;
   }
-  .estate-info__item {
-    margin-right: 15px;
-  }
+  // .estate-info__item {
+  //   margin-right: 15px;
+  // }
   .estate-info__item:last-child {
     margin-right: 0;
+  }
+
+  @include maxMedia($breakpoint-lg) {
+    gap: 50px;
+  }
+
+  @include maxMedia($breakpoint-md) {
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -547,14 +600,29 @@
 
 .estate-info__content-items {
   display: flex;
+  gap: 70px;
+
+  @include maxMedia($breakpoint-xl) {
+    flex-direction: column;
+  }
+  @include maxMedia($breakpoint-lg) {
+    flex-direction: row;
+  }
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .estate-info__content-img {
   border-radius: $border-5;
-  width: 215px;
-  height: 134px;
+  width: 100%;
+  // height: 40vw;
   position: relative;
   margin-bottom: 16px;
+  @include maxMedia($breakpoint-md) {
+    height: 40vw;
+  }
   img {
     top: 0;
     left: 0;
@@ -572,15 +640,17 @@
 }
 
 .estate-info__content-item {
-  margin-right: 70px;
+  // margin-right: 70px;
+  width: 100%;
 }
 
 .nearby .estate-info__items {
   .estate-info__item {
     width: 50%;
     margin: 0;
-    &:first-child {
-      margin-right: 90px;
+
+    @include maxMedia($breakpoint-md) {
+      width: 100%;
     }
   }
 }
@@ -668,13 +738,34 @@
 .estate-info__statistics {
   display: flex;
   align-items: center;
+  gap: 40px;
+
+  @include maxMedia($breakpoint-xl) {
+    flex-direction: column;
+  }
+  @include maxMedia($breakpoint-lg) {
+    flex-direction: row;
+  }
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .estate-info__statistics-item {
   width: 62%;
   &:first-child {
     width: auto;
-    margin-right: 40px;
+  }
+
+  @include maxMedia($breakpoint-xl) {
+    width: 100%;
+  }
+  @include maxMedia($breakpoint-lg) {
+    width: 62%;
+  }
+  @include maxMedia($breakpoint-md) {
+    width: 100%;
   }
 }
 
@@ -790,15 +881,26 @@
 .estate-info__rate {
   display: flex;
   align-items: center;
+  gap: 44px;
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .estate-info__rate-general {
   width: 270px;
-  margin-right: 44px;
+
+  @include maxMedia($breakpoint-md) {
+    width: 100%;
+  }
 }
 
 .estate-info__rate-details {
   width: 62%;
+  @include maxMedia($breakpoint-md) {
+    width: 100%;
+  }
 }
 
 .info-rate {
@@ -811,6 +913,9 @@
   background: $lightWhite;
   border-radius: $border-5;
   overflow: hidden;
+  @include maxMedia($breakpoint-md) {
+    width: 100%;
+  }
   &__figure-wrap {
     display: flex;
     align-items: center;
@@ -1044,6 +1149,9 @@
 
 .real-estate__general {
   margin-top: 46px;
+  @include maxMedia($breakpoint-md) {
+    margin-top: 0;
+  }
 }
 
 .real-estate-agent {
@@ -1051,6 +1159,19 @@
   border-radius: $border-5;
   background: $lightWhite;
   margin-bottom: 24px;
+  @include maxMedia($breakpoint-md) {
+    padding: 20px;
+  }
+  @include maxMedia($breakpoint-sm) {
+    padding: 15px;
+  }
+}
+
+.real-estate-agent .send-message-btn {
+  width: fit-content;
+  @include maxMedia($breakpoint-md) {
+    margin: 0 auto;
+  }
 }
 
 .real-estate-agent__info {
@@ -1096,12 +1217,17 @@
 .real-estate-agent__links {
   display: flex;
   align-items: center;
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .real-estate-agent__links-item {
   margin-right: 11px;
   position: relative;
   padding-left: 15px;
+
   &:before {
     content: "";
     width: 4px;
@@ -1131,6 +1257,7 @@
   transition: all 0.3s ease;
   font-size: 14px;
   color: $baseGray;
+  overflow-wrap: anywhere;
   &:hover {
     color: $baseOrange;
   }
@@ -1142,12 +1269,22 @@
     font-size: 14px;
     line-height: 180%;
   }
+  // button {
+  //   width: fit-content;
+  // }
 }
 
 .real-estate-history {
   padding: 40px;
   background: $lightWhite;
   border-radius: $border-5;
+
+  @include maxMedia($breakpoint-lg) {
+    padding: 25px;
+  }
+  @include maxMedia($breakpoint-sm) {
+    padding: 15px;
+  }
 }
 
 .real-estate-history__tabs {
@@ -1189,8 +1326,13 @@
   padding: 19px 20px 30px 19px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   border-radius: $border-5;
   background: $baseWhite;
+  @include maxMedia($breakpoint-md) {
+    padding: 14px 15px 20px 14px;
+  }
 }
 
 .real-estate-history__item {
@@ -1216,11 +1358,20 @@
 .real-estate-history__item-title {
   color: $baseGray;
   font-size: 16px;
+  text-align: right;
+
+  @include maxMedia($breakpoint-md) {
+    font-size: 12px;
+  }
 }
 
 .real-estate-history__item-elem {
   margin-left: 10px;
   font-weight: 500;
+
+  @include maxMedia($breakpoint-md) {
+    font-size: 12px;
+  }
 }
 
 .real-estate-wrap-info {

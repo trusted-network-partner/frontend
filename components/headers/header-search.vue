@@ -49,7 +49,7 @@
           >
             <ButtonBurger :value.sync="isMobileMenuOpen"></ButtonBurger>
 
-            <MobileMenu :isActive.sync="isMobileMenuOpen"></MobileMenu>
+            <MobileMenu v-model="isMobileMenuOpen"></MobileMenu>
           </div>
           <div :class="{ 'expanded-search': isExpanded }" class="header__btn">
             <ButtonPrimary

@@ -1,22 +1,22 @@
 <template>
   <ul :class="type" class="nav__list">
     <li class="nav__item">
-      <nuxt-link to="agent-info" class="nav__link">
+      <nuxt-link @click.native="generalAction" to="agent-info" class="nav__link">
         {{ $t("nav.profile") }}
       </nuxt-link>
     </li>
     <li class="nav__item">
-      <nuxt-link to="real-estate" class="nav__link">
+      <nuxt-link @click.native="generalAction" to="real-estate" class="nav__link">
         {{ $t("nav.real_estate") }}
       </nuxt-link>
     </li>
     <li class="nav__item">
-      <nuxt-link to="partners" class="nav__link">
+      <nuxt-link @click.native="generalAction" to="partners" class="nav__link">
         {{ $t("nav.partners") }}
       </nuxt-link>
     </li>
     <li class="nav__item">
-      <nuxt-link to="chat" class="nav__link flex">
+      <nuxt-link @click.native="generalAction" to="chat" class="nav__link flex">
         {{ $t("nav.chat") }}
         <span class="nav__link-element">
           <span class="nav__link-element-inner"> 3 </span>
@@ -31,11 +31,18 @@ export default {
   name: "nav-list",
   props: {
     type: {
-      type: "desktop" | "mobile",
-      required: true
+      type: String,
+      validator: value => {
+        return ["desktop", "mobile"].includes(value);
+      }
     }
   },
-  setup() {}
+  emits: ["generalAction"],
+  methods: {
+    generalAction() {
+      this.$emit("generalAction");
+    }
+  }
 };
 </script>
 

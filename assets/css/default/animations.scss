@@ -1,3 +1,4 @@
+//slide-fade-enter
 .slide-fade-enter-active {
   transition: all 0.1s ease;
 }
@@ -9,6 +10,8 @@
   opacity: 0;
 }
 
+
+//slide-fade-long
 .slide-fade-long-enter-active {
   transition: all 0.4s ease;
 }
@@ -20,6 +23,8 @@
   opacity: 0;
 }
 
+
+//slide-fade-long-left
 .slide-fade-long-left-enter-active,
 .slide-fade-long-left-leave-active {
   transition: all 0.4s ease;
