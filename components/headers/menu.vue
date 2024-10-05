@@ -108,39 +108,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.account-wrap > div {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: $border-5;
-  background: $fifthlyGray;
-  position: relative;
-}
-
-.account {
-  &__name {
-    font-weight: 600;
-    font-size: 18px;
-  }
-  &__icon {
-    background: $baseWhite;
-    border-radius: 2px;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    bottom: 0px;
-    right: -2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    svg path {
-      fill: $baseBlack;
-    }
-  }
-}
+@import "~/assets/css/header/account.scss";
+// .account-wrap > div {
+//   cursor: pointer;
+//   width: 50px;
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: $border-5;
+//   background: $fifthlyGray;
+//   position: relative;
+// }
+// .account {
+//   &__name {
+//     font-weight: 600;
+//     font-size: 18px;
+//   }
+//   &__icon {
+//     background: $baseWhite;
+//     border-radius: 2px;
+//     width: 15px;
+//     height: 15px;
+//     position: absolute;
+//     bottom: 0px;
+//     right: -2px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     svg path {
+//       fill: $baseBlack;
+//     }
+//   }
+// }
 .nuxt-link-exact-active {
   font-weight: bold;
   color: $baseOrange;
