@@ -173,7 +173,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import "~/assets/css/header/account.scss";
 .select-container {
   position: relative;
