@@ -8,12 +8,12 @@
     z-index: 1000;
   }
 
-  .select-container.open-up .select-dropdown {
+  &.open-up .select-dropdown {
     top: auto;
     bottom: 100%;
   }
 
-  .select-container.align-right .select-dropdown {
+  &.align-right .select-dropdown {
     left: auto;
     right: 0;
   }
