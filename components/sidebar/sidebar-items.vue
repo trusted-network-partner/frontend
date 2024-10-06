@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar">
+  <div class="sidebar sidebar-items">
     <TrustedAgents />
     <TrendingEstate />
   </div>

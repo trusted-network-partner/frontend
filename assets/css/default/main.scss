@@ -156,8 +156,10 @@ textarea {
     padding-right: 30px;
     position: relative;
     z-index: 10;
-    @include maxMedia($breakpoint-lg) {
-      display: none;
+    &.sidebar-items {
+      @include maxMedia($breakpoint-lg) {
+        display: none;
+      }
     }
   }
 
