@@ -175,26 +175,32 @@ export default {
 
 <style lang="scss" >
 @import "~/assets/css/header/account.scss";
-.select-container {
-  position: relative;
-}
+// .select-container {
+//   position: relative;
+// }
 
-.select-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-}
+// .select-dropdown {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   z-index: 1000;
+// }
 
-.select-container.open-up .select-dropdown {
-  top: auto;
-  bottom: 100%;
-}
+// .select-container.open-up .select-dropdown {
+//   top: auto;
+//   bottom: 100%;
+// }
 
-.select-container.align-right .select-dropdown {
-  left: auto;
-  right: 0;
-}
+// .select-container.align-right .select-dropdown {
+//   left: auto;
+//   right: 0;
+// }
+
+// .nuxt-link-exact-active {
+//   font-weight: bold;
+//   color: $baseOrange;
+// }
+
 // .account-wrap > div {
 //   cursor: pointer;
 //   width: 50px;
@@ -227,8 +233,5 @@ export default {
 //     }
 //   }
 // }
-.nuxt-link-exact-active {
-  font-weight: bold;
-  color: $baseOrange;
-}
+
 </style>

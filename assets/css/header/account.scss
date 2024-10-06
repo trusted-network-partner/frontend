@@ -1,33 +1,59 @@
-.select-container .select-trigger.account-dropdown {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: $border-5;
-  background: $fifthlyGray;
+.account-wrap.select-container {
   position: relative;
-}
 
-.account-dropdown {
-  &__name {
-    font-weight: 600;
-    font-size: 18px;
-  }
-  &__icon {
-    background: $baseWhite;
-    border-radius: 2px;
-    width: 15px;
-    height: 15px;
+  .select-dropdown {
     position: absolute;
-    bottom: 0px;
-    right: -2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    svg path {
-      fill: $baseBlack;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .select-container.open-up .select-dropdown {
+    top: auto;
+    bottom: 100%;
+  }
+
+  .select-container.align-right .select-dropdown {
+    left: auto;
+    right: 0;
+  }
+
+  .nuxt-link-exact-active {
+    font-weight: bold;
+    color: $baseOrange;
+  }
+
+  .account-dropdown {
+    &.select-trigger {
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $border-5;
+      background: $fifthlyGray;
+      position: relative;
+    }
+
+    &__name {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    &__icon {
+      background: $baseWhite;
+      border-radius: 2px;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      bottom: 0px;
+      right: -2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg path {
+        fill: $baseBlack;
+      }
     }
   }
 }
