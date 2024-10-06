@@ -1,18 +1,29 @@
 .community {
   &__items {
     display: flex;
-    margin: 0 -15px;
+    gap: 15px;
+    @include maxMedia($breakpoint-sm) {
+      flex-direction: column;
+    }
     &-wrap {
-      padding: 0 15px;
       width: 33.33%;
       border-radius: $border-5;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include maxMedia($breakpoint-sm) {
+        width: 100%;
+      }
     }
   }
   &__img {
     margin-bottom: 20px;
     position: relative;
     height: 103px;
+    @include maxMedia($breakpoint-sm) {
+      height: 200px;
+    }
     overflow: hidden;
     img {
       position: absolute;

@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <div class="sidebar">
+    <div class="sidebar hidden-mobile">
       <nuxt-link
         to="map-real-estate"
         class="btn-default black btn-filter uppercase"
