@@ -79,12 +79,7 @@ export default {
   .content-wrap {
     position: relative;
   }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 50%;
-    transform: translateY(-42%);
-  }
+
   .agent-info-content {
     padding-top: 36px;
   }

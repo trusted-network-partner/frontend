@@ -50,11 +50,7 @@ export default {
     margin-bottom: 120px;
     position: relative;
   }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 13%;
-  }
+
   .pagination-list{
     margin-left: 10px;
   }

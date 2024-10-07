@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <div class="sidebar">
+    <div class="sidebar mobile-full">
       <ProfileLinks />
     </div>
     <div class="content-wrap about-company">
@@ -50,10 +50,5 @@ export default {
   .content-wrap {
     margin-bottom: 166px;
     position: relative;
-  }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 14%;
   }
 </style>

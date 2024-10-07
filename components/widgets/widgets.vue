@@ -131,6 +131,7 @@ export default {
   position: fixed;
   right: 0px;
   top: 50%;
+  z-index: $widgetsZIndex;
   transform: translateY(-50%);
 }
 

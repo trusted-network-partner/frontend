@@ -98,9 +98,5 @@ export default {
     margin-bottom: 51px;
     width: 100%;
   }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 16%;
-  }
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <div class="sidebar">
+    <div class="sidebar mobile-full">
       <ProfileLinks />
     </div>
     <div class="content-wrap">
@@ -44,11 +44,5 @@ export default {
   }
   .content-wrap {
     position: relative;
-  }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 50%;
-    transform: translateY(-42%);
   }
 </style>

@@ -160,9 +160,15 @@ textarea {
     padding-right: 30px;
     position: relative;
     z-index: 10;
-    &.hidden-mobile{
+    &.hidden-mobile {
       @include maxMedia($breakpoint-lg) {
         display: none;
+      }
+    }
+    &.mobile-full {
+      @include maxMedia($breakpoint-lg) {
+        width: 100%;
+        padding-right: 0px;
       }
     }
 
@@ -184,14 +190,12 @@ textarea {
 .content-wrap {
   width: 74.5%;
 
-
   @include maxMedia($breakpoint-xl) {
     width: 70%;
   }
   @include maxMedia($breakpoint-lg) {
     width: 100%;
   }
-
 }
 
 .container {

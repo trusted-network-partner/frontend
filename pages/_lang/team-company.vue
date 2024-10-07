@@ -129,11 +129,6 @@ export default {
       max-width: 706px;
     }
   }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 16%;
-  }
   .content-form__item-label {
     margin-right: 20px;
   }

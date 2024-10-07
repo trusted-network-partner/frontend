@@ -78,11 +78,7 @@ export default {
 .settings-section {
   margin-bottom: 60px;
 }
-.widgets {
-  position: absolute;
-  right: -152px;
-  top: 5%;
-}
+
 .content-wrap {
   &__details {
     max-width: 1074px;

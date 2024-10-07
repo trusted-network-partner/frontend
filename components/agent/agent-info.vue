@@ -17,7 +17,7 @@
           <h2 class="info-content__title">
             {{ $t('skills') }}
           </h2>
-          <button type="button" class="btn-default">
+          <button type="button" class="info-content__show-all btn-default">
             {{ $t('show_all') }}
             <span>
               (12)

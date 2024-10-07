@@ -35,10 +35,5 @@ import Widget  from '~/components/widgets/widgets'
   .communities-events__info {
     position: relative;
   }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 50%;
-    transform: translateY(-46%);
-  }
+
 </style>

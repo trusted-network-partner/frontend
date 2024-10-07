@@ -54,11 +54,6 @@ export default {
     margin-bottom: 90px;
     width: 100%;
   }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 16%;
-  }
   .content-wrap-details {
     max-width: 824px;
   }

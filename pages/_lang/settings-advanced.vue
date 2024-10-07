@@ -211,11 +211,7 @@ export default {
     margin-bottom: 31px;
     width: 100%;
   }
-  .widgets {
-    position: absolute;
-    right: -152px;
-    top: 5%;
-  }
+
   .content__form-option-text {
     margin-left: 10px;
     color:  #434343;

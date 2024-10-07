@@ -1,6 +1,6 @@
 <template>
   <main class="main looking-seller">
-    <div class="sidebar">
+    <div class="sidebar hidden-mobile">
       <nuxt-link
         to="map-real-estate"
         class="btn-default black btn-filter uppercase"
@@ -78,11 +78,6 @@ export default {
 .content-wrap {
   margin-bottom: 147px;
   position: relative;
-}
-.widgets {
-  position: absolute;
-  right: -152px;
-  top: 7%;
 }
 .pagination-list {
   margin-left: 10px;

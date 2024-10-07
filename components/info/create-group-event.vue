@@ -213,9 +213,4 @@ import CalendarIcon from '~/components/icons/profile/calendar'
   .create-group-event {
     position: relative;
   }
-  .widgets {
-    position: absolute;
-    right: -273px;
-    top: 12.5%;
-  }
 </style>
