@@ -458,6 +458,10 @@ textarea {
 .main-auth {
   position: relative;
   min-height: calc(100vh - 60px);
+
+  @include maxMedia($breakpoint-xl) {
+    min-height: auto;
+  }
   &::before {
     content: "";
     position: absolute;

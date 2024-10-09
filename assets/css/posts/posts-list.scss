@@ -13,7 +13,7 @@
     margin-bottom: 27px;
   }
   &__likes-user {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
       color: $baseOrange;
     }
@@ -23,6 +23,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    @include maxMedia($breakpoint-md) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 20px;
+    }
     &-btn {
       display: flex;
       align-items: center;
@@ -40,14 +46,14 @@
     margin-left: 16px;
     position: relative;
     &:after {
-      content: '';
+      content: "";
       width: 100%;
       height: 1px;
       background: $baseBlack;
       position: absolute;
       left: 0;
       bottom: 4px;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
     &:hover:after {
       width: 0;
@@ -67,7 +73,8 @@
     display: flex;
     align-items: center;
   }
-  &__likes, &__comments {
+  &__likes,
+  &__comments {
     margin-right: 37px;
     input {
       display: none;
@@ -92,7 +99,7 @@
       font-weight: 600;
       font-size: 14px;
       margin-left: 6px;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       text-transform: uppercase;
     }
     &:hover &-text {
@@ -104,9 +111,11 @@
   }
 }
 
-.post__comments-link, .post__likes-label, .post__share__btn {
+.post__comments-link,
+.post__likes-label,
+.post__share__btn {
   svg path {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover {
     svg path {
@@ -127,7 +136,7 @@
 
 .post__author-btn {
   svg path {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover {
     svg path {
@@ -145,7 +154,7 @@
     color: $baseGray;
     margin-left: 12px;
     .user-link {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       &:hover {
         color: $baseOrange;
       }
@@ -175,7 +184,7 @@
   &__name {
     font-weight: 600;
     font-size: 16px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     margin-bottom: 6px;
     display: inline-block;
     &:hover {
@@ -259,7 +268,7 @@
     justify-content: center;
     background: $baseBlack;
     svg path {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
     &:hover svg path {
       fill: $baseOrange;
@@ -275,9 +284,18 @@
 .post__buttons {
   display: flex;
   align-items: center;
+  gap: 20px;
+
+  @include maxMedia($breakpoint-lg) {
+    justify-content: flex-end;
+  }
+  @include maxMedia($breakpoint-md) {
+    justify-content: flex-start;
+  }
+
   button {
     min-width: 175px;
-    margin-right: 20px;
+
     text-transform: uppercase;
     &:last-child {
       margin-right: 0;
@@ -295,7 +313,7 @@
       fill: $baseOrange;
     }
     .post__comments-count {
-      color:  $baseOrange;
+      color: $baseOrange;
     }
   }
 }

@@ -85,7 +85,7 @@ export default {
     margin-bottom: 10px;
   }
   .select-dropdown {
-    width: 50%;
+    // width: 50%;
     padding: 20px 30px;
   }
   .settings-select__item {

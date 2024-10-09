@@ -11,7 +11,7 @@
       position: absolute;
       top: 50%;
       right: 15px;
-     margin-top: -10px;
+      margin-top: -10px;
     }
     &-info {
       .select-trigger {
@@ -65,7 +65,7 @@
         border-bottom: 1px solid $thirdlyGray;
         text-transform: capitalize;
         svg path {
-          transition: all .3s ease;
+          transition: all 0.3s ease;
         }
         &:hover {
           svg path {
@@ -88,7 +88,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
       //transform: translateY(-1px);
     }
@@ -97,7 +97,7 @@
       align-items: center;
     }
     &-icon {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       margin-top: -2px;
     }
   }
@@ -114,7 +114,7 @@
       font-size: 14px;
       padding: 10px 0;
       border-bottom: 1px solid $thirdlyGray;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       &:last-child {
         border-bottom: 0;
       }
@@ -166,8 +166,9 @@
       color: $secondaryBlack;
       padding: 0 15px;
       position: relative;
-      &:after, &:before {
-        content: '';
+      &:after,
+      &:before {
+        content: "";
         width: 500%;
         height: 1px;
         position: absolute;
@@ -195,12 +196,12 @@
     .select-trigger-icon svg path {
       fill: $baseBlack;
     }
-   .select-dropdown {
-     min-width: 150px;
-     left: 50%;
-     transform: translateX(-50%);
-     padding: 10px 20px;
-   }
+    .select-dropdown {
+      min-width: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+    }
     .select-trigger {
       padding-right: 10px;
       position: relative;
@@ -223,7 +224,7 @@
 }
 
 .select-value-item {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .select-wrap .select-trigger:hover {
@@ -259,9 +260,9 @@
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
-      transform: scale(.95);
+      transform: scale(0.95);
     }
     &-wrap {
       margin-right: 9px;
@@ -324,7 +325,8 @@
 }
 
 .select-value-hidden {
-  .select-value-item, .select-trigger-icon {
+  .select-value-item,
+  .select-trigger-icon {
     display: none;
   }
 }

@@ -39,12 +39,14 @@
     font-size: 14px;
     color: $baseGray;
   }
-  &__timing-wrap, .event__rating-wrap {
+  &__timing-wrap,
+  .event__rating-wrap {
     display: flex;
     align-items: center;
     width: 13.9%;
   }
-  &__timing, &__rating {
+  &__timing,
+  &__rating {
     font-size: 13px;
     color: $baseGray;
     margin-top: 4px;
@@ -101,6 +103,12 @@
     padding-bottom: 38px;
     border-bottom: 1px solid $thirdlyGray;
     margin-bottom: 25px;
+
+    gap: 15px;
+    @include maxMedia($breakpoint-md) {
+      flex-direction: column;
+      align-items: stretch;
+    }
   }
   &__left {
     display: flex;
@@ -148,10 +156,22 @@
 .event-info__btns {
   display: flex;
   align-items: center;
+
+  @include maxMedia($breakpoint-md) {
+    gap: 10px;
+  }
   button {
+    flex: 1 1 45%;
     min-width: 198px;
     text-transform: uppercase;
     margin-left: 20px;
+
+    white-space: nowrap;
+
+    @include maxMedia($breakpoint-md) {
+      min-width: auto;
+      margin-left: 0px;
+    }
   }
 }
 
@@ -163,7 +183,7 @@
   padding-bottom: 12px;
   margin-bottom: 24px;
   &:after {
-    content: '';
+    content: "";
     width: 36px;
     height: 4px;
     background: $baseOrange;

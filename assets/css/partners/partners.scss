@@ -8,7 +8,7 @@
     padding-bottom: 7px;
     margin-bottom: 30px;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -79,15 +79,30 @@
 
 .content-wrap__inner {
   display: flex;
+
+  @include maxMedia($breakpoint-xl) {
+    flex-direction: column;
+  }
 }
 .partners.users {
   padding-right: 30px;
-  width: 68.8%
+  width: 68.8%;
+
+  @include maxMedia($breakpoint-xl) {
+    width: 100%;
+    padding-right: 0px;
+    padding-top: 20px;
+  }
 }
 
 .content-wrap.users {
   .search {
     width: 31.2%;
+
+    @include maxMedia($breakpoint-xl) {
+      width: 100%;
+      order: -1;
+    }
   }
 }
 

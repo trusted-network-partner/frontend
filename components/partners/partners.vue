@@ -125,9 +125,9 @@
     color: $baseGray;
   }
   .user-btn-wrap {
-    min-width: 185px;
-    button {
+    button, a {
       text-transform: uppercase;
+      white-space: nowrap;
     }
   }
 </style>

@@ -23,7 +23,8 @@
   z-index: 20;
   &-lang {
     padding: 43px 30px 50px;
-    min-width: 520px;
+    max-width: 520px;
+    width: 95%;
   }
 }
 

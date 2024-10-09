@@ -1,27 +1,37 @@
 <template>
   <div class="auth-general">
     <div class="auth-general__image">
-      <img src="~/assets/img/auth/auth-picture.png" alt="" class="auth-general__img">
+      <img
+        src="~/assets/img/auth/auth-picture.png"
+        alt=""
+        class="auth-general__img"
+      />
     </div>
     <div class="auth-general__content">
       <slot></slot>
       <div class="auth-general__content-buttons">
-        <nuxt-link to="login" class="btn-default blank">{{ $t('auth.login_btn') }}</nuxt-link>
-        <nuxt-link to="auth-type" class="btn-default black">{{ $t('auth.register_btn') }}</nuxt-link>
+        <nuxt-link to="login" class="btn-default blank">{{
+          $t("auth.login_btn")
+        }}</nuxt-link>
+        <nuxt-link to="auth-type" class="btn-default black">{{
+          $t("auth.register_btn")
+        }}</nuxt-link>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-  export default {
-    name: 'auth-general'
-  }
+export default {
+  name: "auth-general"
+};
 </script>
 
 <style lang="scss" scoped>
 .auth-general {
+  width: 100%;
+  
+
   &__content-buttons {
     display: flex;
     align-items: center;

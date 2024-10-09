@@ -16,7 +16,7 @@
 .user-info {
   display: flex;
   align-items: center;
-  &__img   {
+  &__img {
     width: 138px;
     height: 138px;
     border-radius: 5px;
@@ -39,7 +39,7 @@
   font-size: 24px;
   margin-bottom: 18px;
   display: block;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &:hover {
     color: $baseOrange;
   }
@@ -55,13 +55,24 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 -15px;
+  gap: 15px;
+
+  @include maxMedia($breakpoint-sm) {
+    flex-direction: column;
+  }
 }
 
 .settings-main__item {
-  padding: 0 15px;
-  width: 33.33%;
+  flex: 1 1 30%;
   margin-bottom: 30px;
+
+  @include maxMedia($breakpoint-lg) {
+    width: auto;
+    flex: 1 1 45%;
+  }
+  @include maxMedia($breakpoint-sm) {
+    width: 100%;
+  }
 }
 
 .settings-main__item-inner {
@@ -77,7 +88,7 @@
 .settings-main__img {
   width: 48px;
   height: 48px;
-  background: linear-gradient(0deg, #E5E5EC, #E5E5EC), #FFFFFF;
+  background: linear-gradient(0deg, #e5e5ec, #e5e5ec), #ffffff;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -101,7 +112,7 @@
   position: absolute;
   top: 26px;
   right: 23px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 
@@ -127,11 +138,12 @@
     align-items: center;
     justify-content: center;
     width: 50px;
-    height: 50px;background: linear-gradient(0deg, #E5E5EC, #E5E5EC), #FFFFFF;
+    height: 50px;
+    background: linear-gradient(0deg, #e5e5ec, #e5e5ec), #ffffff;
     border-radius: 8px;
     margin-right: 20px;
     svg {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
     &:hover {
       svg path {
@@ -188,7 +200,7 @@
   justify-content: center;
   svg {
     width: 12px;
-    height: 12px
+    height: 12px;
   }
 }
 
@@ -196,16 +208,26 @@
   padding: 30px 30px 10px 30px;
   border-radius: $border-5;
   background: $lightWhite;
+  @include maxMedia($breakpoint-sm) {
+    padding: 20px 20px 10px 20px;
+  }
   &__items {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 -13px;
+
+    @include maxMedia($breakpoint-sm) {
+      flex-direction: column;
+    }
   }
   &__item {
     width: 50%;
     margin-bottom: 20px;
     padding: 0 13px;
+    @include maxMedia($breakpoint-sm) {
+      width: 100%;
+    }
     &-inner {
       display: flex;
       align-items: center;
@@ -233,7 +255,7 @@
   font-size: 14px;
   letter-spacing: -0.1px;
   color: $baseBlack;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   width: 100%;
   &.active {
     border-bottom: 1px solid $baseGray;
@@ -241,13 +263,13 @@
 }
 
 .settings-edit__item .settings-edit__item-value:focus {
-  box-shadow: 0 0 0px 0px rgb(0, 0, 0,.0);
+  box-shadow: 0 0 0px 0px rgb(0, 0, 0, 0);
 }
 
 .settings-edit__item-btn {
   display: flex;
   align-items: center;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   span {
     margin-top: 2px;
     margin-left: 9px;
@@ -277,7 +299,7 @@
     margin-bottom: 36px;
     padding-bottom: 10px;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       width: 36px;
       height: 4px;
@@ -299,24 +321,34 @@
   button {
     color: $baseRed;
     margin-left: 6px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
       transform: translateY(-2px);
     }
   }
 }
 
-
 .settings-options-items {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+
+  @include maxMedia($breakpoint-sm) {
+    flex-direction: column;
+  }
 }
 
 .settings-options-item {
-  padding:  0 15px;
+  padding: 0 15px;
   width: 33.33%;
   margin-bottom: 30px;
+
+  @include maxMedia($breakpoint-md) {
+    width: 50%;
+  }
+  @include maxMedia($breakpoint-sm) {
+    width: 100%;
+  }
   &__inner {
     border-radius: $border-5;
     background: $lightWhite;
@@ -375,7 +407,7 @@
 .settings-btn-more {
   display: flex;
   align-items: center;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &:hover {
     transform: translateY(-2px);
   }
@@ -429,12 +461,11 @@
 
 .settings-advanced {
   .settings-options-items {
-    .settings-options-item:nth-last-child(-n+2) {
+    .settings-options-item:nth-last-child(-n + 2) {
       display: none;
     }
   }
 }
-
 
 .team {
   &__header {
@@ -442,9 +473,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 36px;
-  }
-  &__btn {
-    min-width: 185px;
   }
   .settings-section__title {
     margin-bottom: 0;
@@ -467,12 +495,12 @@
   margin-bottom: 33px;
 }
 
-
 .range {
   .vue-slider-rail {
     background-color: $thirdlyGray;
   }
-  .vue-slider-process, .vue-slider:hover .vue-slider-process {
+  .vue-slider-process,
+  .vue-slider:hover .vue-slider-process {
     background-color: $baseBlack;
   }
   .vue-slider-dot-handle {
@@ -481,7 +509,7 @@
     border-radius: 1px;
     background-color: $baseBlack;
     border: 0;
-    box-shadow: 0 0 0px 0px rgb(0,0,0 /255) ;
+    box-shadow: 0 0 0px 0px rgb(0, 0, 0 /255);
   }
   .vue-slider-dot-handle:hover {
     border-color: $baseBlack;

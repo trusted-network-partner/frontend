@@ -42,11 +42,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+  }
 }
 
 .listing-services__item {
   padding: 0 15px;
   width: 33.33%;
+
+  @include maxMedia($breakpoint-md) {
+    width: 100%;
+  }
 }
 
 .listing-services__img {
