@@ -1,5 +1,5 @@
 <template>
-  <div class="container hire-professional-wrap">
+  <div class="real-estate-wrapper hire-professional-wrap">
     <div
       class="estate-info-element"
       :style="{'height': sidebarHeight + 'px' }"
@@ -471,7 +471,7 @@ export default {
     }
   }
 
-  .swiper-button-prev, {
+  .swiper-button-prev {
     left: auto;
     right: 70px;
   }

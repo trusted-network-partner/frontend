@@ -1059,8 +1059,6 @@
   text-align: center;
 }
 
-
-
 .real-estate__btn {
   max-width: 448px;
   margin: 0 auto 17px;
@@ -1432,11 +1430,19 @@
 .estate-info__item-section {
   display: flex;
   justify-content: space-between;
+
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+  }
 }
 .estate-info__item-column {
   display: flex;
   flex-direction: column;
   width: 50%;
+
+  @include maxMedia($breakpoint-md) {
+    width: 100%
+  }
   &:not(:last-child) {
     margin-right: 30px;
   }

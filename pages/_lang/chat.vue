@@ -1,6 +1,6 @@
 <template>
   <main class="main chat-wrap">
-    <div class="sidebar">
+    <div class="sidebar mobile-full">
       <div class="chat-aside">
         <ChatUsers
           @togglePopUp="togglePopUp"
@@ -51,6 +51,6 @@ export default {
 
 <style lang="scss" scoped>
   .content-wrap {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 </style>

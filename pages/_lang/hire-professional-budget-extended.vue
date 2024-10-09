@@ -1,5 +1,5 @@
 <template>
-  <div class="container hire-professional-wrap">
+  <div class="real-estate-wrapper hire-professional-wrap">
     <div
       class="estate-info-element"
       :style="{'height': sidebarHeight + 'px' }"

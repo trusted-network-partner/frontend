@@ -218,6 +218,9 @@
   padding: 10px;
   padding-top: 50px;
   height: 259px;
+  @include maxMedia($breakpoint-sm) {
+    width: 100%;
+  }
   &:nth-child(2n) {
     width: 50%;
     margin-right: 0;
@@ -298,6 +301,11 @@
   border-radius: $border-5;
   border: 1px solid $thirdlyGray;
   margin-bottom: 20px;
+
+  @include maxMedia($breakpoint-xl) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .content-form__item-check.rounded {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="real-estate-wrapper">
     <div
       class="estate-info-element"
       :style="{'height': sidebarHeight + 'px' }"

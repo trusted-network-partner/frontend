@@ -24,7 +24,6 @@ import FiltersShort from '~/components/map/filters-short'
     background: $baseWhite;
     padding: 46px 16px;
     width: 58%;
-    min-width: 1112px;
     margin-left: auto;
     height: auto;
   }

@@ -23,7 +23,7 @@
         </div>
       </div>
       <client-only>
-        <swiper
+        <!-- <swiper
           ref="mySwiper"
           :options="swiperOption"
         >
@@ -225,7 +225,7 @@
           <swiper-slide>
             slide 2
           </swiper-slide>
-        </swiper>
+        </swiper> -->
       </client-only>
     </div>
     <div class="video__conference-image">

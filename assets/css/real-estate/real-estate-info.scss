@@ -4,7 +4,11 @@
   min-height: calc(100vh - 92px);
   overflow: hidden;
   background: $lightWhite;
-  min-width: max-content;
+  // min-width: max-content;
+
+  @include maxMedia($breakpoint-xl) {
+    min-width: auto;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -14,6 +18,12 @@
     height: 100%;
     z-index: 0;
     width: 42.8%;
+  }
+
+  @include maxMedia($breakpoint-xl) {
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -26,14 +36,31 @@
     width: 42.8%;
     background-color: $sixBlack;
     min-height: 285px;
+
+    @include maxMedia($breakpoint-xl) {
+      display: none;
+    }
   }
   &-info-wrap {
     display: flex;
     position: relative;
     min-height: calc(100vh - 92px);
+
+    @include maxMedia($breakpoint-xl) {
+      flex-direction: column;
+      min-height: auto;
+    }
   }
   &-general {
-    width: 40.5%;
+    width: 42.5%;
+    overflow: hidden;
+    @include maxMedia($breakpoint-xl) {
+      width: 100%;
+      background-color: $baseBlack;
+      padding-bottom: 50px;
+      @include container();
+    }
+
     &__wrap {
       padding: 10px 0;
       background-color: $sixBlack;
@@ -42,10 +69,15 @@
       justify-content: center;
       display: flex;
       flex-direction: column;
+
+      @include maxMedia($breakpoint-xl) {
+        background: transparent;
+      }
     }
     &__title {
       font-weight: bold;
       font-size: 2rem;
+      line-height: 120%;
       margin-bottom: 22px;
     }
     &__descr {
@@ -66,8 +98,26 @@
     }
   }
   &-info {
-    width: 59.5%;
-    padding: 95px 0 0 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include minMedia($breakpoint-md) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @include minMedia($breakpoint-lg) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @include minMedia($breakpoint-xl) {
+      width: 53.5%;
+      padding: 95px 0 0 50px;
+    }
+
+    @include maxMedia($breakpoint-xl) {
+      @include container();
+    }
+
     &__statistics_featured {
       align-items: flex-start;
       .estate-info__stat-item {
@@ -126,7 +176,7 @@
     .default-title {
       margin-bottom: 12px;
     }
-    .estate-info__descr  {
+    .estate-info__descr {
       margin-bottom: 29px;
       max-width: 734px;
       p {
@@ -162,8 +212,9 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  transition: all .3s ease;
-  &:hover:not(.nuxt-link-active), &:hover:not(.active) {
+  transition: all 0.3s ease;
+  &:hover:not(.nuxt-link-active),
+  &:hover:not(.active) {
     transform: translateY(-4px);
   }
   &.passed {
@@ -171,7 +222,8 @@
       opacity: 1;
     }
   }
-  &.nuxt-link-active, &.active {
+  &.nuxt-link-active,
+  &.active {
     .estate-general__link {
       font-weight: bold;
     }
@@ -192,7 +244,7 @@
   position: relative;
   display: inline-block;
   &:before {
-    content: '';
+    content: "";
     width: 18px;
     height: 18px;
     border-radius: 2px;
@@ -202,15 +254,15 @@
     position: absolute;
   }
   &:after {
-    content: '';
+    content: "";
     width: 2px;
     height: 500%;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
     top: 100%;
     left: 8px;
     opacity: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 }
 
@@ -228,6 +280,9 @@
 .estate-general__links {
   height: 100%;
   background-color: $baseBlack;
+  @include maxMedia($breakpoint-xl) {
+    background-color: transparent;
+  }
   &-inner {
     max-width: 413px;
     margin: 0 auto;
@@ -247,10 +302,10 @@
   overflow: hidden;
   padding: 10px;
   margin-bottom: 45px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &.dragged-over {
     border-width: 2px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &-title {
     font-weight: bold;
@@ -279,14 +334,14 @@
     position: relative;
     color: $baseOrange;
     &:before {
-      content: '';
+      content: "";
       width: 100%;
       height: 1px;
       position: absolute;
       bottom: 2px;
       left: 0;
       background: $baseOrange;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
     &:hover:before {
       width: 0;
@@ -320,7 +375,8 @@
     &-inner {
       position: relative;
       height: 180px;
-      img, video {
+      img,
+      video {
         position: absolute;
         top: 0;
         left: 0;
@@ -338,14 +394,14 @@
         background: $baseWhite;
         border: 1px solid $baseBlack;
         z-index: 10;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         opacity: 0;
         cursor: pointer;
         &:hover {
-          transform: rotate(360deg)
+          transform: rotate(360deg);
         }
         svg g {
-          opacity: 1
+          opacity: 1;
         }
       }
       &:hover .delete {
@@ -377,7 +433,7 @@
   color: $baseGray;
 }
 
-.info-default__element.period  {
+.info-default__element.period {
   .select-trigger {
     justify-content: flex-start;
   }
@@ -399,7 +455,7 @@
   font-size: 24px;
 }
 
-.info-default__select  {
+.info-default__select {
   .select-trigger-icon {
     position: absolute;
     top: 50%;
@@ -426,7 +482,7 @@
 }
 
 .map-real-estate-info {
-  .real-estate__item:nth-child(n+4) {
+  .real-estate__item:nth-child(n + 4) {
     display: none;
   }
   .real-estate__item {
@@ -443,5 +499,11 @@
 .estate-general__links-item:last-child {
   .estate-general__link-elem:after {
     display: none;
+  }
+}
+
+.real-estate-wrapper {
+  @include minMedia($breakpoint-xl) {
+    @include container();
   }
 }

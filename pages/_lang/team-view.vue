@@ -1,7 +1,7 @@
 
 <template>
   <main class="main">
-    <div class="sidebar">
+    <div class="sidebar mobile-full">
       <ProfileLinks />
       <Participants />
     </div>

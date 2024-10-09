@@ -31,7 +31,6 @@ export default {
  .main {
    height: calc(100vh - 190px);
    position: relative;
-   min-width: 1470px;
  }
  .map {
    height: 100%;

@@ -5,7 +5,7 @@
     svg {
       &:hover {
         path {
-          transition: all .3s ease;
+          transition: all 0.3s ease;
           fill: $baseOrange;
         }
       }
@@ -55,10 +55,17 @@
 
   &-content {
     width: 100%;
+
     max-width: 800px;
-    //padding-top: 120px;
+    padding-bottom: 40px;
     padding-top: 50px;
-    margin-left: 60px;
+    @include minMedia($breakpoint-xl) {
+      width: 53.5%;
+      margin-left: 60px;
+    }
+    @include maxMedia($breakpoint-xl) {
+      @include container();
+    }
 
     &__title {
       margin-bottom: 20px;
@@ -72,15 +79,17 @@
       margin-bottom: 20px;
       display: flex;
       width: 100%;
-
+      @include maxMedia($breakpoint-sm) {
+        flex-direction: column;
+        gap: 20px;
+      }
       .info-default {
-        width: 375px;
+        width: 100%;
 
         &:not(:last-child) {
           margin-right: 50px;
         }
       }
-
     }
 
     .btn-default {
@@ -98,6 +107,11 @@
     max-width: 400px;
     display: flex;
     margin-bottom: 50px;
+
+    @include maxMedia($breakpoint-sm) {
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 
   &-budget__item {
@@ -113,7 +127,6 @@
     }
   }
 
-
   //&-budget__item-top{
   //  width: 120px;
   //  height: 120px;
@@ -124,7 +137,6 @@
 
   &-budget__buttons {
     display: flex;
-
   }
 
   &-budget__button {
@@ -133,24 +145,21 @@
     }
   }
   //preference
-  &-reference__items{
+  &-reference__items {
     flex-wrap: wrap;
   }
-  &-preference__item{
-    .content-form__item-wrap{
-      width: 245px;
-      &:not(:last-child){
+  &-preference__item {
+    .content-form__item-wrap {
+      &:not(:last-child) {
         margin-right: 20px;
       }
     }
-
-
   }
-  &-preference__title{
+  &-preference__title {
     margin-bottom: 20px;
   }
-  &-preference__list{
-    padding: 13px ;
+  &-preference__list {
+    padding: 13px;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -158,23 +167,22 @@
     //justify-content: center;
     height: 70px;
     width: 100%;
-
   }
-  &-preference__object{
+  &-preference__object {
     background-color: $sixtyGray;
     height: 50px;
     border-radius: 5px;
     display: flex;
     align-items: center;
-    span{
+    span {
       font-size: 14px;
       font-weight: 700;
     }
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 12px;
     }
   }
-  &-preference__item-link{
+  &-preference__item-link {
     color: $baseOrange;
     font-size: 16px;
     font-weight: 600;
@@ -183,48 +191,50 @@
     }
   }
   //filters
-  &__filters.filter__popup{
+  &__filters.filter__popup {
     padding: 0;
   }
-  &__filters{
+  &__filters {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  &__filters-item{
+  &__filters-item {
     width: 205px;
     margin-bottom: 25px;
   }
 
   //rental
-  &-rental__item{
+  &-rental__item {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    .hire-professional-preference__title{
+    .hire-professional-preference__title {
       width: 100%;
     }
-
   }
-  &-rental__info-default{
+  &-rental__info-default {
     background-color: #fff;
     margin-bottom: 20px;
-    input{
-
+    input {
     }
   }
-  &-rental__items{
+  &-rental__items {
     display: flex;
-    .estate-info__item{
-      &:not(:last-child){
+
+    @include maxMedia($breakpoint-md) {
+      flex-direction: column;
+    }
+    .estate-info__item {
+      &:not(:last-child) {
         margin-right: 30px;
       }
     }
   }
 }
 
-.hire-professional-reference__items  {
+.hire-professional-reference__items {
   justify-content: space-between;
 }
 

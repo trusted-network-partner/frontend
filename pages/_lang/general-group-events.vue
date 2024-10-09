@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <div class="sidebar">
+    <div class="sidebar hidden-mobile">
       <Filters />
     </div>
     <Modal v-model="isModalFilters" type="left">

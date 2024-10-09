@@ -1,60 +1,76 @@
-.customer{
-  &__info{
-    textarea:focus, input:focus:not(.search__input){
+.customer {
+  &__info {
+    textarea:focus,
+    input:focus:not(.search__input) {
       box-shadow: none;
     }
   }
-  &__info .customer__info-descr{
+  &__info .customer__info-descr {
     max-width: 100%;
   }
-  &__info-wrap{
+  &__info-wrap {
     max-width: 375px;
   }
-  &__general-title{
+  &__general-title {
     margin-bottom: 15px;
   }
-  &__type-container{
+  &__type-container {
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include maxMedia($breakpoint-sm) {
+      flex-direction: column;
+    }
   }
-  &__form-item{
+  &__form-item {
     width: 49%;
     background-color: $baseWhite;
     margin-right: 0;
-    &:not(:nth-last-child(-n+2)){
+
+    @include maxMedia($breakpoint-sm) {
+      width: 100%;
+    }
+    &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 12px;
     }
   }
-  &__info-categories{
+  &__info-categories {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
   }
-  &__info-category{
+  &__info-category {
     display: flex;
-    //flex-direction: column;
     flex-wrap: wrap;
-    &:not(:last-child){
+
+    @include maxMedia($breakpoint-sm) {
+      flex-direction: column;
+      gap: 15px;
+    }
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-  &__info-category__title{
+  &__info-category__title {
     width: 100%;
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
   }
-  &__info-category__container{
+  &__info-category__container {
     width: 30%;
     position: relative;
+    @include maxMedia($breakpoint-sm) {
+      width: 100%;
+    }
   }
-  &__info-single-category{
+  &__info-single-category {
     padding-left: 40px;
   }
-  &__custom-radiobox{
+  &__custom-radiobox {
     position: absolute;
     top: 50%;
     left: 0;
@@ -65,53 +81,60 @@
     background-color: $baseWhite;
     border: 1px solid $thirdlyGray;
   }
-  &__info-details{
+  &__info-details {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    &__top{
+    &__top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include maxMedia($breakpoint-sm) {
+        flex-direction: column;
+      }
+    }
+    &__bottom {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    &__bottom{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .info-default{
+    .info-default {
       width: 48%;
       border: 1px solid $thirdlyGray;
+      @include maxMedia($breakpoint-sm) {
+        width: 100%;
+      }
       margin-bottom: 20px;
-      input:focus:not(.search__input){
+      input:focus:not(.search__input) {
         box-shadow: none;
       }
     }
   }
-  &__details-bottom__title{
+  &__details-bottom__title {
     width: 100%;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 25px;
   }
-  &__product-content{
-    .info-default{
+  &__product-content {
+    .info-default {
       margin-bottom: 20px;
     }
   }
-  &__product-textarea{
+  &__product-textarea {
     height: 150px;
   }
-  &__info{
-    .content-form__upload{
+  &__info {
+    .content-form__upload {
       justify-content: center;
       margin-bottom: 20px;
     }
-    .content-form__upload-item{
+    .content-form__upload-item {
       background-color: $baseWhite;
     }
-    .estate-info__btns{
+    .estate-info__btns {
       justify-content: center;
     }
     .estate-info__btns .btn-default {
@@ -122,9 +145,18 @@
 .customer__info-details {
   .info-default-select {
     width: 48%;
+
+    @include maxMedia($breakpoint-sm) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }
-.estate-general__container{
+.estate-general__container {
   max-width: 375px;
   margin-left: 80px;
+
+  @include maxMedia($breakpoint-sm) {
+    margin-left: 30px;
+  }
 }

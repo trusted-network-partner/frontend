@@ -298,6 +298,9 @@
   width: 100%;
   max-width: 950px;
   padding: 0 52px;
+  @include maxMedia($breakpoint-md) {
+    padding: 0 22px;
+  }
   .default-title {
     margin-bottom: 40px;
   }
@@ -411,11 +414,22 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+
+    @include maxMedia($breakpoint-md) {
+      gap: 15px;
+      flex-direction: column;
+    }
+
     .estate-info__item-subject {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       width: 33%;
+      @include maxMedia($breakpoint-md) {
+        width: 100%;
+        justify-content: space-between;
+      }
+
       .estate-info__item-left {
         margin-right: 22px;
       }

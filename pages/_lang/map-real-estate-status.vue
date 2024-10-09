@@ -25,11 +25,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .main {
     min-height: calc(100vh - 92px);
     position: relative;
-    min-width: 1470px;
   }
   .map {
     height: 100%;

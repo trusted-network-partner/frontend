@@ -342,6 +342,11 @@
   &-identification__form-double {
     display: flex;
     justify-content: space-between;
+
+    @include maxMedia($breakpoint-sm) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }
 .medium-margin_bottom {
@@ -349,6 +354,10 @@
 }
 .less_input {
   max-width: 220px;
+
+  @include maxMedia($breakpoint-sm) {
+    max-width: 100%;
+  }
 }
 
 //About company

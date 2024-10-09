@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <div class="sidebar">
+    <div class="sidebar mobile-full">
       <ProfileLinks />
     </div>
     <div class="content-wrap content-wrap__info">

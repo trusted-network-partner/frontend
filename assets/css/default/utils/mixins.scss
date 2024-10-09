@@ -5,7 +5,7 @@
 }
 
 @mixin maxMedia($breakpoint) {
-  @media screen and (max-width: $breakpoint) {
+  @media screen and (max-width: ($breakpoint - 1px)) {
     @content;
   }
 }
@@ -14,4 +14,12 @@
   @media (hover: hover) {
     @content;
   }
+}
+
+@mixin container() {
+  max-width: 1470px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }

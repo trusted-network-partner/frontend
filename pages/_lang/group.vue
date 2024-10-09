@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <div class="sidebar">
+    <div class="sidebar mobile-full">
       <ProfileLinks />
     </div>
     <div class="content-wrap">
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import ProfileLinks from '~/components/profile/profile-links'
-import GroupDetails from '~/components/group/group-details'
+import ProfileLinks from "~/components/profile/profile-links";
+import GroupDetails from "~/components/group/group-details";
 export default {
-  layout: 'default',
-  name: 'group',
+  layout: "default",
+  name: "group",
 
   components: {
     ProfileLinks,
@@ -22,13 +22,17 @@ export default {
   },
 
   head: {
-    title: 'Group'
-  },
-}
+    title: "Group"
+  }
+};
 </script>
 
-<style scoped>
-  .content-wrap {
-    margin-bottom: 125px;
+<style scoped lang="scss">
+.content-wrap {
+  margin-bottom: 125px;
+
+  @include maxMedia($breakpoint-lg) {
+    margin-top: 30px;
   }
+}
 </style>

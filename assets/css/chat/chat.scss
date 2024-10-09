@@ -69,7 +69,7 @@
   cursor: pointer;
   width: 50px;
   height: 50px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,6 +108,12 @@
   padding: 28px 0 22px;
   border-bottom: 1px solid $thirdlyGray;
   margin-bottom: 20px;
+
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 .chat-post-message {
@@ -116,6 +122,12 @@
 .chat-info__header-user {
   display: flex;
   align-items: center;
+
+  @include maxMedia($breakpoint-md) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 .chat-info__user {
@@ -123,7 +135,7 @@
   text-transform: uppercase;
   .bold {
     font-weight: bold;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
       color: $baseOrange;
     }
@@ -169,9 +181,13 @@
   overflow-y: auto;
 }
 
-.chat-message__item  {
+.chat-message__item {
   width: 50%;
   margin-bottom: 40px;
+
+  @include maxMedia($breakpoint-md) {
+    width: 80%;
+  }
 }
 
 .chat-message {
@@ -188,7 +204,7 @@
       background: $fifthlyGray;
       position: relative;
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: -20px;
@@ -209,6 +225,10 @@
   display: inline-block;
   margin-left: auto;
   font-size: 14px;
+
+  @include maxMedia($breakpoint-md) {
+    padding: 13px 30px 13px 15px;
+  }
 }
 
 .chat-message__item-list {
@@ -242,59 +262,68 @@
 }
 
 //video conference
-.video__conference{
+.video__conference {
   display: flex;
-  .video__conference-image{
+
+  @include maxMedia($breakpoint-xl) {
+    flex-direction: column;
+  }
+
+  .video__conference-image {
     margin-top: 20px;
     width: 100%;
     height: 100%;
-    img{
+
+    @include maxMedia($breakpoint-xl) {
+      order: -1;
+    }
+    img {
       width: 100%;
       height: 100%;
-      object-fit:cover;
+      object-fit: cover;
     }
   }
 }
-.video__info{
-  min-width: 585px;
+.video__info {
+  width: 100%;
   max-width: 585px;
   margin-right: 20px;
-  .video__owner{
+  .video__owner {
     margin-left: auto;
     margin-right: 23px;
     margin-bottom: 19px;
-    .chat-message::before{
+    .chat-message::before {
       bottom: 0;
       right: -20px;
       left: auto;
       transform: rotate(90deg);
-
     }
   }
 }
-.chat-info__header-tab{
+.chat-info__header-tab {
   position: relative;
   font-size: 16px;
-  transition: .3s linear;
+  transition: 0.3s linear;
   text-transform: uppercase;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.chat-info__tab_active{
+.chat-info__tab_active {
   font-weight: 700;
-  &:after{
-    content: '';
+  padding-bottom: 15px;
+  &:after {
+    content: "";
     width: 100%;
     height: 4px;
     background-color: $baseOrange;
     position: absolute;
-    bottom: -27px;
+    bottom: 0px;
     left: 0;
-    transition: .3s linear;
+    transition: 0.3s linear;
   }
 }
-.video__message-item{
+.video__message-item {
   width: 100%;
   max-width: 465px;
   margin-right: auto;
@@ -302,67 +331,65 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  .video__message-user{
+  .video__message-user {
     min-width: 56px;
     margin: 0;
     margin-right: 20px;
-
   }
 }
-.video__message-item__list{
+.video__message-item__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 
-  .chat-message{
+  .chat-message {
     margin: 0;
     width: 100%;
   }
-  .video__message-name{
+  .video__message-name {
     margin-bottom: 5px;
     font-weight: 600;
     width: max-content;
     font-size: 14px;
   }
-  .video__message-time{
+  .video__message-time {
     width: max-content;
     text-align: end;
     display: block;
     font-size: 12px;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, 0.5);
   }
-
-
-
 }
 //video conference
-.video__conference-details__item{
+.video__conference-details__item {
   display: flex;
   flex-direction: column;
   padding-bottom: 55px;
   margin-bottom: 20px;
-  &:not(:last-child){
+  &:not(:last-child) {
     border-bottom: 1px solid $thirdlyGray;
-
   }
-  .user-info{
+  .user-info {
     margin-bottom: 20px;
   }
-  .user-info__img{
+  .user-info__img {
     margin-right: 20px;
   }
-.user-info__contacts{
-  display: flex;
+  .user-info__contacts {
+    display: flex;
 
-}
-  .user-info__contacts-phone{
+    @include maxMedia($breakpoint-sm) {
+      flex-direction: column;
+    }
+  }
+  .user-info__contacts-phone {
     font-size: 14px;
     color: $baseGray;
     position: relative;
     margin-right: 30px;
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       top: 50%;
       position: absolute;
       transform: translateY(-50%);
@@ -373,51 +400,50 @@
       border-radius: 50%;
     }
   }
-  .user-info__contacts-email{
+  .user-info__contacts-email {
     font-size: 14px;
     color: $baseGray;
   }
 }
-.video__conference-details__title{
+.video__conference-details__title {
   text-transform: uppercase;
   align-self: center;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.video__conference-details__table{
+.video__conference-details__table {
   display: flex;
 }
-.video__conference-details__column{
+.video__conference-details__column {
   display: flex;
   flex-direction: column;
-  span{
-    &:not(:last-child){
+  span {
+    &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
-  &-first{
+  &-first {
     margin-right: 25px;
-    span{
+    span {
       text-transform: uppercase;
       font-size: 14px;
       font-weight: 600;
       color: $baseGray;
     }
   }
-  &-second{
-    span{
+  &-second {
+    span {
       font-size: 14px;
     }
   }
-
 }
-.video__conference-details-interactions{
+.video__conference-details-interactions {
   display: flex;
-  .btn-default{
-    margin-right: 20px  ;
+  .btn-default {
+    margin-right: 20px;
   }
-  .video__conference-details__link{
+  .video__conference-details__link {
     border-radius: 5px;
     background-color: $sixtyGray;
     display: flex;
@@ -425,91 +451,89 @@
     justify-content: center;
     width: 48px;
     height: 48px;
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 20px;
     }
   }
 }
-.video__conference-details__progressbar{
+.video__conference-details__progressbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &-line{
-    width: 540px  ;
+  &-line {
+    width: 540px;
     position: relative;
     height: 6px;
     border-radius: 3px;
-    background-color: #A8E4B9;
-    &:after{
-      content: '';
+    background-color: #a8e4b9;
+    &:after {
+      content: "";
       width: 91%;
       height: 6px;
       border-radius: 3px;
       position: absolute;
       top: 0;
       left: 0;
-      background-color: #02B033;
+      background-color: #02b033;
     }
   }
-  &-value{
+  &-value {
     font-weight: 600;
     font-size: 14px;
   }
 }
 
-
-.video__conference-feed__item{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  &:not(:last-child){
+.video__conference-feed__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  &:not(:last-child) {
     border-bottom: 1px solid $thirdlyGray;
-
   }
 }
-.video__conference-feed__banner{
+.video__conference-feed__banner {
   width: 100%;
   height: 60px;
-  background-color: rgba(237, 143, 3,.1);
+  background-color: rgba(237, 143, 3, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
-  span{
+  span {
     color: $baseRed;
   }
 }
-.video__conference-feed__auction{
+.video__conference-feed__auction {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
 }
-.video__conference-feed__auction-item{
+.video__conference-feed__auction-item {
   position: relative;
   display: flex;
   align-items: center;
-  .video__conference-feed__auction-item__text{
+  .video__conference-feed__auction-item__text {
     text-transform: uppercase;
     font-size: 16px;
     color: $baseGray;
     font-weight: 700;
     margin-right: 15px;
   }
-  .video__conference-feed__auction-item__value{
+  .video__conference-feed__auction-item__value {
     font-weight: 700;
     font-size: 16px;
   }
 }
-.video__conference-feed__form{
+.video__conference-feed__form {
   position: relative;
 }
-.video__conference-feed__form-item{
+.video__conference-feed__form-item {
   position: relative;
-  .video__conference-feed__form-input{
+  .video__conference-feed__form-input {
     width: 260px;
     height: 55px;
     border: 1px solid $baseGray;
@@ -520,7 +544,7 @@
     border-radius: 8px;
   }
 }
-.video__conference-feed__form-button{
+.video__conference-feed__form-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -534,44 +558,41 @@
   font-size: 16px;
   border-radius: 0 8px 8px 0;
   text-transform: uppercase;
-
-
 }
-.video__conference-feed__auction-button{
+.video__conference-feed__auction-button {
   align-self: center;
   max-width: 260px;
   text-transform: uppercase;
 }
 
-
-.video__conference-feed__purchased-item{
+.video__conference-feed__purchased-item {
   width: 100%;
-  .user-info{
+  .user-info {
     align-items: flex-end;
   }
 
-  .user-info__img{
+  .user-info__img {
     min-width: 56px;
     width: 56px;
     height: 58px;
   }
-  .user-info__details{
+  .user-info__details {
     width: 100%;
   }
-  .user-info__number{
+  .user-info__number {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
   }
-  .user-info__number-name{
+  .user-info__number-name {
     font-weight: 600;
     font-size: 14px;
   }
-  .user-info__number-time{
+  .user-info__number-time {
     color: $baseGray;
     font-size: 12px;
   }
-  .user-info__bet{
+  .user-info__bet {
     width: 100%;
     border-radius: 5px;
     height: 60px;
@@ -581,7 +602,7 @@
     background-color: $lightWhite;
     text-transform: uppercase;
   }
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -589,7 +610,7 @@
 .video__conference-details {
   &__link {
     svg path {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
     &:hover {
       svg path {
@@ -619,12 +640,12 @@
     }
     &-count {
       font-size: 14px;
-      color: $baseGray;;
+      color: $baseGray;
     }
   }
   &-user {
     margin-right: -5px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     display: inline-flex;
     width: 24px;
     height: 24px;
@@ -642,12 +663,12 @@
   &-more {
     width: 24px;
     height: 24px;
-    background: #6FCF97;
+    background: #6fcf97;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
       transform: translateY(-2px);
     }
@@ -659,7 +680,6 @@
   }
 }
 
-
-.pb_less{
+.pb_less {
   padding-bottom: 35px;
 }
